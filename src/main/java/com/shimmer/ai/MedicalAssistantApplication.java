@@ -1,4 +1,4 @@
-package com.shimmer.ai.langchain4j;
+package com.shimmer.ai;
 
 
 import org.springframework.boot.SpringApplication;
@@ -17,4 +17,5 @@ public class MedicalAssistantApplication {
         System.out.println("=======================Medical Assistant Application is running...==================");
 
     }
+
 }
