@@ -1,4 +1,4 @@
-package com.shimmer.ai.assistant;
+package com.shimmer.ai.langchain4j;
 
 import dev.langchain4j.service.spring.AiService;
 import dev.langchain4j.service.spring.AiServiceWiringMode;

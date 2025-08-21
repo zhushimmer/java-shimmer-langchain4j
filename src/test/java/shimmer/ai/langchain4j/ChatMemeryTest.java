@@ -1,7 +1,7 @@
 package shimmer.ai.langchain4j;
 
 import com.shimmer.ai.MedicalAssistantApplication;
-import com.shimmer.ai.assistant.Assistant;
+import com.shimmer.ai.langchain4j.Assistant;
 import com.shimmer.ai.assistant.MemeryChatAssistant;
 import com.shimmer.ai.assistant.SperatorMemeryChatAssistant;
 import dev.langchain4j.community.model.dashscope.QwenChatModel;
@@ -10,12 +10,10 @@ import dev.langchain4j.data.message.UserMessage;
 import dev.langchain4j.memory.chat.MessageWindowChatMemory;
 import dev.langchain4j.model.chat.response.ChatResponse;
 import dev.langchain4j.service.AiServices;
-import dev.langchain4j.service.spring.AiService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 /**
@@ -65,9 +63,9 @@ public class ChatMemeryTest {
     private MemeryChatAssistant memeryChatAssistant;
     @Test
     public void testChatMemeryUseAiservice2() {
-        String response = memeryChatAssistant.chat("我是一名网安渗透工程师");
+        String response = memeryChatAssistant.chat("我是小燃");
         System.out.println(response);
-        String response2 = memeryChatAssistant.chat("我的职业是什么");
+        String response2 = memeryChatAssistant.chat("我是谁");
         System.out.println(response2);
     }
 

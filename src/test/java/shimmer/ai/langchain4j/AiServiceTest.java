@@ -1,6 +1,6 @@
 package shimmer.ai.langchain4j;
 
-import com.shimmer.ai.assistant.Assistant;
+import com.shimmer.ai.langchain4j.Assistant;
 import com.shimmer.ai.MedicalAssistantApplication;
 import dev.langchain4j.community.model.dashscope.QwenChatModel;
 import dev.langchain4j.service.AiServices;

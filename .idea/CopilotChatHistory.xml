@@ -4,10 +4,126 @@
     <option name="conversations">
       <list>
         <Conversation>
+          <option name="createTime" value="1755652375555" />
+          <option name="id" value="0198c50944037c799a7295dfb2b25bc9" />
+          <option name="title" value="新对话 2025年8月20日 09:12:55" />
+          <option name="updateTime" value="1755652375555" />
+        </Conversation>
+        <Conversation>
+          <option name="createTime" value="1755564560925" />
+          <option name="id" value="0198bfcd521d7275aef13746d013fd34" />
+          <option name="title" value="新对话 2025年8月19日 08:49:20" />
+          <option name="updateTime" value="1755564560925" />
+        </Conversation>
+        <Conversation>
+          <option name="createTime" value="1755220546199" />
+          <option name="id" value="0198ab4c129772cd8d867b3372ee5a82" />
+          <option name="title" value="新对话 2025年8月15日 09:15:46" />
+          <option name="updateTime" value="1755220546199" />
+        </Conversation>
+        <Conversation>
+          <option name="createTime" value="1755132445789" />
+          <option name="id" value="0198a60bc45d70baad5d40a982623d1a" />
+          <option name="title" value="新对话 2025年8月14日 08:47:25" />
+          <option name="updateTime" value="1755132445789" />
+        </Conversation>
+        <Conversation>
+          <option name="createTime" value="1754961336795" />
+          <option name="id" value="01989bd8d9db7170ab3b95a2b3bda815" />
+          <option name="title" value="新对话 2025年8月12日 09:15:36" />
+          <option name="updateTime" value="1754961336795" />
+        </Conversation>
+        <Conversation>
+          <option name="createTime" value="1754874319936" />
+          <option name="id" value="019896a91440727db0414c9d91203806" />
+          <option name="title" value="新对话 2025年8月11日 09:05:19" />
+          <option name="updateTime" value="1754874319936" />
+        </Conversation>
+        <Conversation>
           <option name="createTime" value="1754638590329" />
-          <option name="id" value="0198889c21797b65a029516c80420c8b" />
-          <option name="title" value="新对话 2025年8月08日 15:36:30" />
-          <option name="updateTime" value="1754638590329" />
+          <option name="id" value="019887688dce7ff1ac6cfa45e1a4fbe6" />
+          <option name="title" value="&#10;```&#10;java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test&#10;```" />
+          <option name="turns">
+            <list>
+              <Turn>
+                <option name="agent" value="" />
+                <option name="answer" value="Gsrh viili nvhhztv rmwrxzgvh gszg blf'iv gibrmt gl fhv gsv DzmcRnztvNlwvo uiln OzmtXszrm5q'h WzhsHxlkv rmgvtizgrlm, yfg blf'iv nrhhrmt hlnv ivjfrivw kziznvgvih rm blfi ivjfvhg.&#10;&#10;Gsv viili hkvxrurxzoob hgzgvh gszg gdl urvowh ziv ivjfrivw:&#10;8. `ufmxgrlm` - Gsrh orpvob ivuvih gl gsv hkvxrurx rnztv tvmvizgrlm ufmxgrlm blf dzmg gl fhv&#10;7. `yzhv_rnztv_fio` - Gsrh hfttvhgh blf'iv gibrmt gl wl rnztv-gl-rnztv tvmvizgrlm zmw mvvw gl kilerwv z hlfixv rnztv FIO&#10;&#10;Gl urc gsrh rhhfv, blf hslfow:&#10;&#10;8. Nzpv hfiv blf'iv kilkviob xlmurtfirmt gsv DzmcRnztvNlwvo drgs zoo ivjfrivw kziznvgvih&#10;7. Ru wlrmt rnztv tvmvizgrlm, kilerwv vrgsvi:&#10;   - Z gvcg kilnkg uli gvcg-gl-rnztv tvmvizgrlm&#10;   - Li z yzhv rnztv FIO uli rnztv-gl-rnztv tvmvizgrlm&#10;&#10;Sviv'h zm vcznkov lu sld blf nrtsg kilkviob xlmurtfiv rg:&#10;&#10;```qzez&#10;DzmcRnztvNlwvo nlwvo = DzmcRnztvNlwvo.yfrowvi()&#10;    .zkrPvb(&quot;blfi-zkr-pvb&quot;)&#10;    .nlwvoMznv(&quot;dzmc-e8&quot;) // li dszgvevi nlwvo blf'iv fhrmt&#10;    .ufmxgrlm(&quot;gvcg-gl-rnztv&quot;) // li &quot;rnztv-gl-rnztv&quot;&#10;    .yzhvRnztvFio(&quot;sggkh://vcznkov.xln/rnztv.qkt&quot;) // ru wlrmt rnztv-gl-rnztv&#10;    .yfrow();&#10;&#10;RnztvTvmvizgrlmIvhklmhv ivhklmhv = nlwvo.tvmvizgv(&#10;    mvd RnztvTvmvizgrlmIvjfvhg.Yfrowvi()&#10;        .kilnkg(&quot;z yvzfgrufo hfmhvg levi nlfmgzrmh&quot;)&#10;        .yfrow()&#10;);&#10;```&#10;&#10;Ru blf'iv wlrmt gvcg-gl-rnztv tvmvizgrlm, blf nrtsg mlg mvvw `yzhv_rnztv_fio`, yfg blf dlfow mvvw gl hkvxrub gsv ufmxgrlm zh &quot;gvcg-gl-rnztv&quot;." />
+                <option name="chatResource" value="user" />
+                <option name="codeReferences">
+                  <list />
+                </option>
+                <option name="command" value="" />
+                <option name="conversationId" value="019887688dce7ff1ac6cfa45e1a4fbe6" />
+                <option name="historyDocumentMap">
+                  <map>
+                    <entry key="file:///D:/code/java-shimmer-langchain4j/src/test/java/shimmer/ai/langchain4j/LLMDemoTest.java" value="package shimmer.ai.langchain4j;&#10;&#10;import com.shimmer.ai.langchain4j.MedicalAssistantApplication;&#10;import dev.langchain4j.community.model.dashscope.QwenChatModel;&#10;import dev.langchain4j.community.model.dashscope.WanxImageModel;&#10;import dev.langchain4j.data.image.Image;&#10;import dev.langchain4j.model.chat.ChatModel;&#10;import dev.langchain4j.model.ollama.OllamaChatModel;&#10;import dev.langchain4j.model.openai.OpenAiChatModel;&#10;import dev.langchain4j.model.output.Response;&#10;import org.junit.jupiter.api.Test;&#10;import org.springframework.beans.factory.annotation.Autowired;&#10;import org.springframework.boot.test.context.SpringBootTest;&#10;&#10;/**&#10; * @description: LLMDemoTest&#10; * ( ^_^ )&#10; * @Author: ZT&#10; * (✿◠‿◠)&#10; * @Date: 2025/8/8 9:45&#10; */&#10;@SpringBootTest(classes = MedicalAssistantApplication.class)&#10;public class LLMDemoTest {&#10;&#10;    @Test&#10;    public void test(){&#10;        //初始化模型&#10;        OpenAiChatModel model = OpenAiChatModel.builder()&#10;                //LangChain4j提供的代理服务器，该代理服务器会将演示密钥替换成真实密钥， 再将请求转发给OpenAI API&#10;                .baseUrl(&quot;http://langchain4j.dev/demo/openai/v1&quot;)&#10;                // 设置模型api地址（如果apiKey=&quot;demo&quot;，则可省略baseUrl的配置）&#10;                .apiKey(&quot;demo&quot;) //设置模型apiKey&#10;                .modelName(&quot;gpt-4o-mini&quot;) //设置模型名称&#10;                .build();&#10;        String answer = model.chat(&quot;我能用你干嘛&quot;);&#10;        System.out.println(answer); // Hello World&#10;    }&#10;&#10;    @Autowired&#10;    private OpenAiChatModel openAiChatModel;&#10;&#10;&#10;    @Test&#10;    public void testOpenAiChatModel() {&#10;        String answer = openAiChatModel.chat(&quot;我能用你干嘛&quot;);&#10;        System.out.println(answer); // Hello World&#10;    }&#10;&#10;    //    OpenAiChatModel implements ChatModel&#10;//    @Autowired&#10;//    private ChatModel chatModel;&#10;//    @Test&#10;//    public void testChatModel() {&#10;//        String answer = chatModel.chat(&quot;我能用你干嘛&quot;);&#10;//        System.out.println(answer); // Hello World&#10;//    }&#10;&#10;    @Autowired&#10;    private OllamaChatModel ollamaChatModel;&#10;    @Test&#10;    public void testOllamaChatModel() {&#10;        String answer = ollamaChatModel.chat(&quot;我能用你干嘛&quot;);&#10;        System.out.println(answer); // Hello World&#10;    }&#10;&#10;&#10;&#10;    @Autowired&#10;    private QwenChatModel qwenChatModel;&#10;    @Test&#10;    public void testQwenChatModel() {&#10;        String answer = qwenChatModel.chat(&quot;我能用你干嘛&quot;);&#10;        System.out.println(answer); // Hello World&#10;&#10;    }&#10;    //通义万象&#10;    @Test&#10;    public void testDashScopeWanx(){&#10;        WanxImageModel wanxImageModel = WanxImageModel.builder()&#10;                .modelName(&quot;wanx2.1-t2i-plus&quot;)&#10;                .apiKey(System.getenv(&quot;ALIBAILIAN_API_KEY&quot;)).build();&#10;&#10;        Response&lt;Image&gt; answer = wanxImageModel.generate(&quot;蒸汽朋克城市：巨大的齿轮和管道纵横交错，覆盖着整个城市的建筑。高耸入云的烟囱中喷出浓浓的黑烟，天空被染成了暗灰色。街道上，蒸汽驱动的机械车辆穿梭往来，发出嘈杂的轰鸣声。人们穿着皮质的长风衣、戴着护目镜和金属头盔，手中拿着各种机械工具和武器。一座巨大的钟楼矗立在城市中央，齿轮在钟楼上飞速转动，钟声沉闷而悠远。城市边缘，巨大的蒸汽动力飞行器缓缓升空，准备开始新的旅程。&quot;);&#10;        System.out.println(answer.content().url());&#10;    }&#10;}&#10;" />
+                  </map>
+                </option>
+                <option name="messageId" value="019888fdf59e7663a3657a4391e9e1cf" />
+                <option name="question" value="&#10;```&#10;gvVcxvkgrlm: [UZROVW] RmezorwKziznvgvi: Gsv ulooldrmt urvowh ziv ivjfrivw: ufmxgrlm, yzhv_rnztv_fio&#10;&#10;&#9;zg wve.ozmtxszrm5q.xlnnfmrgb.nlwvo.wzhshxlkv.DzmcRnztvNlwvo.wlTvmvizgv(DzmcRnztvNlwvo.qzez:880)&#10;&#9;zg wve.ozmtxszrm5q.xlnnfmrgb.nlwvo.wzhshxlkv.DzmcRnztvNlwvo.tvmvizgv(DzmcRnztvNlwvo.qzez:08)&#10;&#9;zg hsrnnvi.zr.ozmtxszrm5q.OONWvnlGvhg.gvhgWzhsHxlkvDzmc(OONWvnlGvhg.qzez:16)&#10;&#9;zg qzez.yzhv/qzez.ozmt.ivuovxg.Nvgslw.rmelpv(Nvgslw.qzez:431)&#10;&#9;zg qzez.yzhv/qzez.fgro.ZiizbOrhg.uliVzxs(ZiizbOrhg.qzez:8488)&#10;&#9;zg qzez.yzhv/qzez.fgro.ZiizbOrhg.uliVzxs(ZiizbOrhg.qzez:8488)&#10;```" />
+                <option name="rating" value="UNRATED" />
+                <option name="referenceBeans">
+                  <list />
+                </option>
+                <option name="status" value="SUCCESS" />
+                <option name="variables">
+                  <list />
+                </option>
+              </Turn>
+              <Turn>
+                <option name="agent" value="" />
+                <option name="answer" value="Gsrh viili rmwrxzgvh gszg gsviv ziv nfogrkov rhhfvh drgs blfi WzhsHxlkv/Dzmc rnztv tvmvizgrlm hvgfk:&#10;&#10;### 8. **Nrhhrmt ZKR Pvb Xlmurtfizgrlm**&#10;Gsv `zkkorxzgrlm.kilkvigrvh` urov hsldh `ZORYZRORZM_ZKR_PVB` yfg rg'h mlg kilkviob ulinzggvw. Rg hslfow yv:&#10;```kilkvigrvh&#10;wzhshxlkv.zkr.pvb=blfi_zxgfzo_zkr_pvb_sviv&#10;```&#10;&#10;### 7. **595 Mlg Ulfmw Viili**&#10;Gsv 595 viili hfttvhgh vrgsvi:&#10;- Gsv ZKR vmwklrmg rh rmxliivxg&#10;- Gsv hvierxv blf'iv gibrmt gl zxxvhh wlvhm'g vcrhg&#10;- Blfi ZKR pvb wlvhm'g szev kilkvi kvinrhhrlmh&#10;&#10;### 6. **Hlofgrlm Hgvkh**&#10;&#10;8. **Urc gsv ZKR Pvb Xlmurtfizgrlm**:&#10;   Fkwzgv blfi `zkkorxzgrlm.kilkvigrvh`:&#10;   ```kilkvigrvh&#10;   wzhshxlkv.zkr.pvb=blfi_wzhshxlkv_zkr_pvb_sviv&#10;   ```&#10;&#10;7. **Evirub gsv DzmcRnztvNlwvo Xlmurtfizgrlm**:&#10;   ```qzez&#10;   DzmcRnztvNlwvo nlwvo = DzmcRnztvNlwvo.yfrowvi()&#10;       .zkrPvb(Hbhgvn.tvgvme(&quot;wzhshxlkv.zkr.pvb&quot;)) // li olzw uiln kilkvigrvh&#10;       .nlwvoMznv(&quot;dzmc-e8&quot;) // li gsv ozgvhg nlwvo&#10;       .yfrow();&#10;   ```&#10;&#10;6. **Xsvxp ZKR Vmwklrmg**:&#10;   Nzpv hfiv blf'iv fhrmt gsv xliivxg yzhv FIO. Gsv wvuzfog hslfow yv urmv, yfg ru blf mvvw gl leviirwv:&#10;   ```qzez&#10;   .yzhvFio(&quot;sggkh://wzhshxlkv.zorbfmxh.xln/zkr/e8&quot;)&#10;   ```&#10;&#10;5. **Evirub Hvierxv Zezrozyrorgb**:&#10;   - Xsvxp ru gsv rnztv tvmvizgrlm hvierxv rh zezrozyov rm blfi ivtrlm&#10;   - Evirub blfi zxxlfmg szh kilkvi kvinrhhrlmh&#10;&#10;4. **Gvhg drgs z Hrnkov Ivjfvhg**:&#10;   ```qzez&#10;   RnztvTvmvizgrlmIvhklmhv ivhklmhv = nlwvo.tvmvizgv(&#10;       mvd RnztvTvmvizgrlmIvjfvhg.Yfrowvi()&#10;           .kilnkg(&quot;z xzg hrggrmt lm z ozkglk&quot;)&#10;           .m(8) // mfnyvi lu rnztvh&#10;           .hrav(&quot;8975c8975&quot;) // rnztv hrav&#10;           .yfrow()&#10;   );&#10;   ```&#10;&#10;Ru blf'iv hgroo tvggrmt 595 viilih, blf nzb mvvw gl:&#10;- Xsvxp ZorXolfw WzhsHxlkv wlxfnvmgzgrlm uli zmb ZKR xszmtvh&#10;- Evirub blfi zxxlfmg rh kilkviob zxgrezgvw uli rnztv tvmvizgrlm hvierxvh&#10;- Gib gsv ZKR drgs z hrnkov xfio ivjfvhg gl rhlozgv gsv rhhfv" />
+                <option name="chatResource" value="user" />
+                <option name="codeReferences">
+                  <list>
+                    <CodeReferencesBean>
+                      <option name="content" value="ZORYZRORZM_ZKR_PVB" />
+                      <option name="end_line" value="30" />
+                      <option name="filename" value="application.properties" />
+                      <option name="language" value="Properties" />
+                      <option name="range">
+                        <Range>
+                          <option name="end">
+                            <Position>
+                              <option name="character" value="71" />
+                              <option name="line" value="30" />
+                            </Position>
+                          </option>
+                          <option name="start">
+                            <Position>
+                              <option name="character" value="53" />
+                              <option name="line" value="30" />
+                            </Position>
+                          </option>
+                        </Range>
+                      </option>
+                      <option name="start_line" value="30" />
+                      <option name="type" value="editor" />
+                      <option name="url" value="file:///D:/code/java-shimmer-langchain4j/src/main/resources/application.properties" />
+                    </CodeReferencesBean>
+                  </list>
+                </option>
+                <option name="command" value="" />
+                <option name="conversationId" value="019887688dce7ff1ac6cfa45e1a4fbe6" />
+                <option name="historyDocumentMap">
+                  <map>
+                    <entry key="file:///D:/code/java-shimmer-langchain4j/src/main/resources/application.properties" value="server.port=8080&#10;&#10;&#10;#langchain4j????&#10;#langchain4j.open-ai.chat-model.base-url=http://langchain4j.dev/demo/openai/v1&#10;#langchain4j.open-ai.chat-model.api-key=demo&#10;#langchain4j.open-ai.chat-model.model-name=gpt-4o-mini&#10;&#10;&#10;#Deepseek????&#10;#deepseek-chat ???? DeepSeek-V3-0324? ???? model='deepseek-chat' ???&#10;#deepseek-reasoner ???? DeepSeek-R1-0528? ???? model='deepseek-reasoner' ???&#10;langchain4j.open-ai.chat-model.base-url=https://api.deepseek.com/v1&#10;langchain4j.open-ai.chat-model.api-key=${DEEPSEEK_API_KEY}&#10;langchain4j.open-ai.chat-model.model-name=deepseek-chat&#10;&#10;#????&#10;langchain4j.open-ai.chat-model.log-requests=true&#10;langchain4j.open-ai.chat-model.log-responses=true&#10;&#10;&#10;#ollama????&#10;langchain4j.ollama.chat-model.base-url=http://localhost:11434&#10;langchain4j.ollama.chat-model.model-name=deepseek-r1:1.5b&#10;langchain4j.ollama.chat-model.log-requests=true&#10;langchain4j.ollama.chat-model.log-responses=true&#10;&#10;&#10;&#10;#??????&#10;langchain4j.community.dashscope.chat-model.api-key=${ALIBAILIAN_API_KEY}&#10;langchain4j.community.dashscope.chat-model.model-name=qwen-max&#10;#????&#10;logging.level.root=debug&#10;" />
+                  </map>
+                </option>
+                <option name="messageId" value="019889026cdc7663a3658722c7ec517f" />
+                <option name="question" value="&#10;```&#10;xln.zoryzyz.wzhshxlkv.vcxvkgrlm.ZkrVcxvkgrlm: {&quot;hgzgfhXlwv&quot;:595,&quot;nvhhztv&quot;:&quot;Mlg Ulfmw&quot;,&quot;xlwv&quot;:&quot;ivhklmhv_viili&quot;,&quot;rhQhlm&quot;:uzohv}&#10;; hgzgfh ylwb:{&quot;hgzgfhXlwv&quot;:595,&quot;nvhhztv&quot;:&quot;Mlg Ulfmw&quot;,&quot;xlwv&quot;:&quot;ivhklmhv_viili&quot;,&quot;rhQhlm&quot;:uzohv}&#10;&#9;zg xln.zoryzyz.wzhshxlkv.kilglxlo.lpsggk.LpSggkSggkXorvmg.hvmw(LpSggkSggkXorvmg.qzez:760)&#10;&#9;zg xln.zoryzyz.wzhshxlkv.zkr.ZhbmxsilmlfhZkr.zhbmxXzoo(ZhbmxsilmlfhZkr.qzez:31)&#10;&#9;zg xln.zoryzyz.wzhshxlkv.zkr.ZhbmxsilmlfhZkr.xzoo(ZhbmxsilmlfhZkr.qzez:47)&#10;&#9;zg xln.zoryzyz.wzhshxlkv.zrtx.rnztvhbmgsvhrh.RnztvHbmgsvhrh.xzoo(RnztvHbmgsvhrh.qzez:854)&#10;&#9;zg wve.ozmtxszrm5q.xlnnfmrgb.nlwvo.wzhshxlkv.DzmcRnztvNlwvo.wlTvmvizgv(DzmcRnztvNlwvo.qzez:886)&#10;&#9;zg wve.ozmtxszrm5q.xlnnfmrgb.nlwvo.wzhshxlkv.DzmcRnztvNlwvo.tvmvizgv(DzmcRnztvNlwvo.qzez:08)&#10;&#9;zg hsrnnvi.zr.ozmtxszrm5q.OONWvnlGvhg.gvhgWzhsHxlkvDzmc(OONWvnlGvhg.qzez:16)&#10;&#9;zg qzez.yzhv/qzez.ozmt.ivuovxg.Nvgslw.rmelpv(Nvgslw.qzez:431)&#10;&#9;zg qzez.yzhv/qzez.fgro.ZiizbOrhg.uliVzxs(ZiizbOrhg.qzez:8488)&#10;&#9;zg qzez.yzhv/qzez.fgro.ZiizbOrhg.uliVzxs(ZiizbOrhg.qzez:8488)&#10;Xzfhvw yb: xln.zoryzyz.wzhshxlkv.vcxvkgrlm.ZkrVcxvkgrlm: {&quot;hgzgfhXlwv&quot;:595,&quot;nvhhztv&quot;:&quot;Mlg Ulfmw&quot;,&quot;xlwv&quot;:&quot;ivhklmhv_viili&quot;,&quot;rhQhlm&quot;:uzohv}; hgzgfh ylwb:{&quot;hgzgfhXlwv&quot;:595,&quot;nvhhztv&quot;:&quot;Mlg Ulfmw&quot;,&quot;xlwv&quot;:&quot;ivhklmhv_viili&quot;,&quot;rhQhlm&quot;:uzohv}&#10;&#9;... 89 nliv&#10;```" />
+                <option name="rating" value="UNRATED" />
+                <option name="referenceBeans">
+                  <list />
+                </option>
+                <option name="status" value="SUCCESS" />
+                <option name="variables">
+                  <list />
+                </option>
+              </Turn>
+            </list>
+          </option>
+          <option name="updateTime" value="1754645312078" />
         </Conversation>
         <Conversation>
           <option name="createTime" value="1754623028517" />

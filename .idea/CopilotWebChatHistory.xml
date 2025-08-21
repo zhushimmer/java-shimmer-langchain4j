@@ -6817,6 +6817,1098 @@
                   <option name="role" value="assistant" />
                   <option name="topic" value="" />
                 </UIChatMessage>
+                <UIChatMessage>
+                  <option name="command" value="" />
+                  <option name="content" value="&#10;```&#10;teException: [FAILED] InvalidParameter: The following fields are required: function, base_image_url&#10;&#10;&#9;at dev.langchain4j.community.model.dashscope.WanxImageModel.doGenerate(WanxImageModel.java:119)&#10;&#9;at dev.langchain4j.community.model.dashscope.WanxImageModel.generate(WanxImageModel.java:91)&#10;&#9;at shimmer.ai.langchain4j.LLMDemoTest.testDashScopeWanx(LLMDemoTest.java:83)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#10;&#9;at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#10;&#9;at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#10;```" />
+                  <option name="cost" value="0" />
+                  <option name="createdAt" value="1754645001630" />
+                  <option name="localReferences">
+                    <list />
+                  </option>
+                  <option name="parser">
+                    <SimpleMarkdownStreamParser>
+                      <option name="columns">
+                        <list>
+                          <option value="3" />
+                          <option value="98" />
+                          <option value="-1" />
+                          <option value="95" />
+                          <option value="92" />
+                          <option value="76" />
+                          <option value="61" />
+                          <option value="61" />
+                          <option value="61" />
+                        </list>
+                      </option>
+                      <option name="content" value="&#10;```&#10;teException: [FAILED] InvalidParameter: The following fields are required: function, base_image_url&#10;&#10;&#9;at dev.langchain4j.community.model.dashscope.WanxImageModel.doGenerate(WanxImageModel.java:119)&#10;&#9;at dev.langchain4j.community.model.dashscope.WanxImageModel.generate(WanxImageModel.java:91)&#10;&#9;at shimmer.ai.langchain4j.LLMDemoTest.testDashScopeWanx(LLMDemoTest.java:83)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#10;&#9;at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#10;&#9;at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#10;```" />
+                      <option name="nodes">
+                        <list>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="teException: [FAILED] InvalidParameter: The following fields are required: function, base_image_url&#10;&#10;&#9;at dev.langchain4j.community.model.dashscope.WanxImageModel.doGenerate(WanxImageModel.java:119)&#10;&#9;at dev.langchain4j.community.model.dashscope.WanxImageModel.generate(WanxImageModel.java:91)&#10;&#9;at shimmer.ai.langchain4j.LLMDemoTest.testDashScopeWanx(LLMDemoTest.java:83)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#10;&#9;at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#10;&#9;at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#10;" />
+                            <option name="contentId" value="1445394759" />
+                            <option name="expectEnding" value="```" />
+                            <option name="indentSize" value="0" />
+                            <option name="language" value="" />
+                            <option name="settled" value="false" />
+                            <option name="type" value="code-block" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                        </list>
+                      </option>
+                      <option name="parserState">
+                        <ParserState>
+                          <option name="line" value="9" />
+                          <option name="column" value="2" />
+                          <option name="offset" value="567" />
+                          <option name="closing" value="true" />
+                          <option name="innerBlock" value="1" />
+                          <option name="moveCursor" value="true" />
+                        </ParserState>
+                      </option>
+                    </SimpleMarkdownStreamParser>
+                  </option>
+                  <option name="range">
+                    <CodeActionChatRequestRange>
+                      <option name="start">
+                        <CodeActionChatRequestRangePosition />
+                      </option>
+                      <option name="end">
+                        <CodeActionChatRequestRangePosition>
+                          <option name="character" value="10000" />
+                        </CodeActionChatRequestRangePosition>
+                      </option>
+                    </CodeActionChatRequestRange>
+                  </option>
+                  <option name="role" value="user" />
+                  <option name="selectedRanges">
+                    <list />
+                  </option>
+                  <option name="uri" value="" />
+                  <option name="variables">
+                    <list />
+                  </option>
+                </UIChatMessage>
+                <UIChatMessage>
+                  <option name="actions">
+                    <list />
+                  </option>
+                  <option name="codebaseReferences">
+                    <list />
+                  </option>
+                  <option name="codebaseStatus" value="init" />
+                  <option name="command" value="" />
+                  <option name="content" value="This error message indicates that you're trying to use the WanxImageModel from LangChain4j's DashScope integration, but you're missing some required parameters in your request.&#10;&#10;The error specifically states that two fields are required:&#10;1. `function` - This likely refers to the specific image generation function you want to use&#10;2. `base_image_url` - This suggests you're trying to do image-to-image generation and need to provide a source image URL&#10;&#10;To fix this issue, you should:&#10;&#10;1. Make sure you're properly configuring the WanxImageModel with all required parameters&#10;2. If doing image generation, provide either:&#10;   - A text prompt for text-to-image generation&#10;   - Or a base image URL for image-to-image generation&#10;&#10;Here's an example of how you might properly configure it:&#10;&#10;```java&#10;WanxImageModel model = WanxImageModel.builder()&#10;    .apiKey(&quot;your-api-key&quot;)&#10;    .modelName(&quot;wanx-v1&quot;) // or whatever model you're using&#10;    .function(&quot;text-to-image&quot;) // or &quot;image-to-image&quot;&#10;    .baseImageUrl(&quot;https://example.com/image.jpg&quot;) // if doing image-to-image&#10;    .build();&#10;&#10;ImageGenerationResponse response = model.generate(&#10;    new ImageGenerationRequest.Builder()&#10;        .prompt(&quot;a beautiful sunset over mountains&quot;)&#10;        .build()&#10;);&#10;```&#10;&#10;If you're doing text-to-image generation, you might not need `base_image_url`, but you would need to specify the function as &quot;text-to-image&quot;." />
+                  <option name="cost" value="13859" />
+                  <option name="createdAt" value="1754645015551" />
+                  <option name="followup">
+                    <list />
+                  </option>
+                  <option name="id" value="019888fdf59e7663a3657a4391e9e1cf" />
+                  <option name="knowledgeReferences">
+                    <list />
+                  </option>
+                  <option name="parser">
+                    <SimpleMarkdownStreamParser>
+                      <option name="columns">
+                        <list>
+                          <option value="175" />
+                          <option value="-1" />
+                          <option value="58" />
+                          <option value="91" />
+                          <option value="119" />
+                          <option value="-1" />
+                          <option value="29" />
+                          <option value="-1" />
+                          <option value="87" />
+                          <option value="44" />
+                          <option value="46" />
+                          <option value="53" />
+                          <option value="-1" />
+                          <option value="56" />
+                          <option value="-1" />
+                          <option value="6" />
+                          <option value="46" />
+                          <option value="26" />
+                          <option value="58" />
+                          <option value="52" />
+                          <option value="76" />
+                          <option value="12" />
+                          <option value="-1" />
+                          <option value="49" />
+                          <option value="39" />
+                          <option value="51" />
+                          <option value="15" />
+                          <option value="1" />
+                          <option value="2" />
+                          <option value="-1" />
+                          <option value="140" />
+                        </list>
+                      </option>
+                      <option name="content" value="This error message indicates that you're trying to use the WanxImageModel from LangChain4j's DashScope integration, but you're missing some required parameters in your request.&#10;&#10;The error specifically states that two fields are required:&#10;1. `function` - This likely refers to the specific image generation function you want to use&#10;2. `base_image_url` - This suggests you're trying to do image-to-image generation and need to provide a source image URL&#10;&#10;To fix this issue, you should:&#10;&#10;1. Make sure you're properly configuring the WanxImageModel with all required parameters&#10;2. If doing image generation, provide either:&#10;   - A text prompt for text-to-image generation&#10;   - Or a base image URL for image-to-image generation&#10;&#10;Here's an example of how you might properly configure it:&#10;&#10;```java&#10;WanxImageModel model = WanxImageModel.builder()&#10;    .apiKey(&quot;your-api-key&quot;)&#10;    .modelName(&quot;wanx-v1&quot;) // or whatever model you're using&#10;    .function(&quot;text-to-image&quot;) // or &quot;image-to-image&quot;&#10;    .baseImageUrl(&quot;https://example.com/image.jpg&quot;) // if doing image-to-image&#10;    .build();&#10;&#10;ImageGenerationResponse response = model.generate(&#10;    new ImageGenerationRequest.Builder()&#10;        .prompt(&quot;a beautiful sunset over mountains&quot;)&#10;        .build()&#10;);&#10;```&#10;&#10;If you're doing text-to-image generation, you might not need `base_image_url`, but you would need to specify the function as &quot;text-to-image&quot;.&#10;" />
+                      <option name="nodes">
+                        <list>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="This error message indicates that you're trying to use the WanxImageModel from LangChain4j's DashScope integration, but you're missing some required parameters in your request." />
+                            <option name="contentId" value="-1713496960" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="The error specifically states that two fields are required:" />
+                            <option name="contentId" value="-1190402842" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="1. `function` - This likely refers to the specific image generation function you want to use" />
+                            <option name="contentId" value="2121207815" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="2. `base_image_url` - This suggests you're trying to do image-to-image generation and need to provide a source image URL" />
+                            <option name="contentId" value="-555263191" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="To fix this issue, you should:" />
+                            <option name="contentId" value="1476267371" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="1. Make sure you're properly configuring the WanxImageModel with all required parameters" />
+                            <option name="contentId" value="-90437718" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="2. If doing image generation, provide either:" />
+                            <option name="contentId" value="-1190457251" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="A text prompt for text-to-image generation" />
+                            <option name="contentId" value="1772555694" />
+                            <option name="indentSize" value="3" />
+                            <option name="settled" value="true" />
+                            <option name="startSymbol" value="-" />
+                            <option name="type" value="list-item" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="Or a base image URL for image-to-image generation" />
+                            <option name="contentId" value="-893744067" />
+                            <option name="indentSize" value="3" />
+                            <option name="settled" value="true" />
+                            <option name="startSymbol" value="-" />
+                            <option name="type" value="list-item" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="Here's an example of how you might properly configure it:" />
+                            <option name="contentId" value="1883139440" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="WanxImageModel model = WanxImageModel.builder()&#10;    .apiKey(&quot;your-api-key&quot;)&#10;    .modelName(&quot;wanx-v1&quot;) // or whatever model you're using&#10;    .function(&quot;text-to-image&quot;) // or &quot;image-to-image&quot;&#10;    .baseImageUrl(&quot;https://example.com/image.jpg&quot;) // if doing image-to-image&#10;    .build();&#10;&#10;ImageGenerationResponse response = model.generate(&#10;    new ImageGenerationRequest.Builder()&#10;        .prompt(&quot;a beautiful sunset over mountains&quot;)&#10;        .build()&#10;);&#10;" />
+                            <option name="contentId" value="-1119101536" />
+                            <option name="expectEnding" value="```" />
+                            <option name="indentSize" value="0" />
+                            <option name="language" value="java" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="code-block" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="If you're doing text-to-image generation, you might not need `base_image_url`, but you would need to specify the function as &quot;text-to-image&quot;." />
+                            <option name="contentId" value="-349565015" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="false" />
+                            <option name="type" value="undetermined" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                        </list>
+                      </option>
+                      <option name="parserState">
+                        <ParserState>
+                          <option name="line" value="31" />
+                          <option name="column" value="-1" />
+                          <option name="offset" value="1386" />
+                          <option name="moveCursor" value="true" />
+                        </ParserState>
+                      </option>
+                    </SimpleMarkdownStreamParser>
+                  </option>
+                  <option name="references">
+                    <list />
+                  </option>
+                  <option name="role" value="assistant" />
+                  <option name="topic" value="" />
+                </UIChatMessage>
+                <UIChatMessage>
+                  <option name="command" value="" />
+                  <option name="content" value="&#10;```&#10;com.alibaba.dashscope.exception.ApiException: {&quot;statusCode&quot;:404,&quot;message&quot;:&quot;Not Found&quot;,&quot;code&quot;:&quot;response_error&quot;,&quot;isJson&quot;:false}&#10;; status body:{&quot;statusCode&quot;:404,&quot;message&quot;:&quot;Not Found&quot;,&quot;code&quot;:&quot;response_error&quot;,&quot;isJson&quot;:false}&#10;&#9;at com.alibaba.dashscope.protocol.okhttp.OkHttpHttpClient.send(OkHttpHttpClient.java:239)&#10;&#9;at com.alibaba.dashscope.api.AsynchronousApi.asyncCall(AsynchronousApi.java:68)&#10;&#9;at com.alibaba.dashscope.api.AsynchronousApi.call(AsynchronousApi.java:52)&#10;&#9;at com.alibaba.dashscope.aigc.imagesynthesis.ImageSynthesis.call(ImageSynthesis.java:145)&#10;&#9;at dev.langchain4j.community.model.dashscope.WanxImageModel.doGenerate(WanxImageModel.java:113)&#10;&#9;at dev.langchain4j.community.model.dashscope.WanxImageModel.generate(WanxImageModel.java:91)&#10;&#9;at shimmer.ai.langchain4j.LLMDemoTest.testDashScopeWanx(LLMDemoTest.java:83)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#10;&#9;at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#10;&#9;at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#10;Caused by: com.alibaba.dashscope.exception.ApiException: {&quot;statusCode&quot;:404,&quot;message&quot;:&quot;Not Found&quot;,&quot;code&quot;:&quot;response_error&quot;,&quot;isJson&quot;:false}; status body:{&quot;statusCode&quot;:404,&quot;message&quot;:&quot;Not Found&quot;,&quot;code&quot;:&quot;response_error&quot;,&quot;isJson&quot;:false}&#10;&#9;... 10 more&#10;```" />
+                  <option name="cost" value="0" />
+                  <option name="createdAt" value="1754645294301" />
+                  <option name="localReferences">
+                    <list>
+                      <LocalReferences>
+                        <option name="isRequestStage" value="true" />
+                        <option name="range">
+                          <RefRange />
+                        </option>
+                        <option name="uri" value="{&quot;path&quot;:&quot;file:///D:/code/java-shimmer-langchain4j/src/main/resources/application.properties&quot;}" />
+                      </LocalReferences>
+                    </list>
+                  </option>
+                  <option name="parser">
+                    <SimpleMarkdownStreamParser>
+                      <option name="columns">
+                        <list>
+                          <option value="3" />
+                          <option value="124" />
+                          <option value="92" />
+                          <option value="89" />
+                          <option value="79" />
+                          <option value="74" />
+                          <option value="89" />
+                          <option value="95" />
+                          <option value="92" />
+                          <option value="76" />
+                          <option value="61" />
+                          <option value="61" />
+                          <option value="61" />
+                          <option value="228" />
+                          <option value="11" />
+                        </list>
+                      </option>
+                      <option name="content" value="&#10;```&#10;com.alibaba.dashscope.exception.ApiException: {&quot;statusCode&quot;:404,&quot;message&quot;:&quot;Not Found&quot;,&quot;code&quot;:&quot;response_error&quot;,&quot;isJson&quot;:false}&#10;; status body:{&quot;statusCode&quot;:404,&quot;message&quot;:&quot;Not Found&quot;,&quot;code&quot;:&quot;response_error&quot;,&quot;isJson&quot;:false}&#10;&#9;at com.alibaba.dashscope.protocol.okhttp.OkHttpHttpClient.send(OkHttpHttpClient.java:239)&#10;&#9;at com.alibaba.dashscope.api.AsynchronousApi.asyncCall(AsynchronousApi.java:68)&#10;&#9;at com.alibaba.dashscope.api.AsynchronousApi.call(AsynchronousApi.java:52)&#10;&#9;at com.alibaba.dashscope.aigc.imagesynthesis.ImageSynthesis.call(ImageSynthesis.java:145)&#10;&#9;at dev.langchain4j.community.model.dashscope.WanxImageModel.doGenerate(WanxImageModel.java:113)&#10;&#9;at dev.langchain4j.community.model.dashscope.WanxImageModel.generate(WanxImageModel.java:91)&#10;&#9;at shimmer.ai.langchain4j.LLMDemoTest.testDashScopeWanx(LLMDemoTest.java:83)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#10;&#9;at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#10;&#9;at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#10;Caused by: com.alibaba.dashscope.exception.ApiException: {&quot;statusCode&quot;:404,&quot;message&quot;:&quot;Not Found&quot;,&quot;code&quot;:&quot;response_error&quot;,&quot;isJson&quot;:false}; status body:{&quot;statusCode&quot;:404,&quot;message&quot;:&quot;Not Found&quot;,&quot;code&quot;:&quot;response_error&quot;,&quot;isJson&quot;:false}&#10;&#9;... 10 more&#10;```" />
+                      <option name="nodes">
+                        <list>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="com.alibaba.dashscope.exception.ApiException: {&quot;statusCode&quot;:404,&quot;message&quot;:&quot;Not Found&quot;,&quot;code&quot;:&quot;response_error&quot;,&quot;isJson&quot;:false}&#10;; status body:{&quot;statusCode&quot;:404,&quot;message&quot;:&quot;Not Found&quot;,&quot;code&quot;:&quot;response_error&quot;,&quot;isJson&quot;:false}&#10;&#9;at com.alibaba.dashscope.protocol.okhttp.OkHttpHttpClient.send(OkHttpHttpClient.java:239)&#10;&#9;at com.alibaba.dashscope.api.AsynchronousApi.asyncCall(AsynchronousApi.java:68)&#10;&#9;at com.alibaba.dashscope.api.AsynchronousApi.call(AsynchronousApi.java:52)&#10;&#9;at com.alibaba.dashscope.aigc.imagesynthesis.ImageSynthesis.call(ImageSynthesis.java:145)&#10;&#9;at dev.langchain4j.community.model.dashscope.WanxImageModel.doGenerate(WanxImageModel.java:113)&#10;&#9;at dev.langchain4j.community.model.dashscope.WanxImageModel.generate(WanxImageModel.java:91)&#10;&#9;at shimmer.ai.langchain4j.LLMDemoTest.testDashScopeWanx(LLMDemoTest.java:83)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#10;&#9;at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#10;&#9;at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#10;Caused by: com.alibaba.dashscope.exception.ApiException: {&quot;statusCode&quot;:404,&quot;message&quot;:&quot;Not Found&quot;,&quot;code&quot;:&quot;response_error&quot;,&quot;isJson&quot;:false}; status body:{&quot;statusCode&quot;:404,&quot;message&quot;:&quot;Not Found&quot;,&quot;code&quot;:&quot;response_error&quot;,&quot;isJson&quot;:false}&#10;&#9;... 10 more&#10;" />
+                            <option name="contentId" value="-1697080118" />
+                            <option name="expectEnding" value="```" />
+                            <option name="indentSize" value="0" />
+                            <option name="language" value="" />
+                            <option name="settled" value="false" />
+                            <option name="type" value="code-block" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                        </list>
+                      </option>
+                      <option name="parserState">
+                        <ParserState>
+                          <option name="line" value="15" />
+                          <option name="column" value="2" />
+                          <option name="offset" value="1268" />
+                          <option name="closing" value="true" />
+                          <option name="innerBlock" value="1" />
+                          <option name="moveCursor" value="true" />
+                        </ParserState>
+                      </option>
+                    </SimpleMarkdownStreamParser>
+                  </option>
+                  <option name="range">
+                    <CodeActionChatRequestRange>
+                      <option name="start">
+                        <CodeActionChatRequestRangePosition />
+                      </option>
+                      <option name="end">
+                        <CodeActionChatRequestRangePosition>
+                          <option name="character" value="10000" />
+                        </CodeActionChatRequestRangePosition>
+                      </option>
+                    </CodeActionChatRequestRange>
+                  </option>
+                  <option name="role" value="user" />
+                  <option name="selectedRanges">
+                    <list />
+                  </option>
+                  <option name="uri" value="" />
+                  <option name="variables">
+                    <list />
+                  </option>
+                </UIChatMessage>
+                <UIChatMessage>
+                  <option name="actions">
+                    <list />
+                  </option>
+                  <option name="codebaseReferences">
+                    <list />
+                  </option>
+                  <option name="codebaseStatus" value="init" />
+                  <option name="command" value="" />
+                  <option name="content" value="This error indicates that there are multiple issues with your DashScope/Wanx image generation setup:&#10;&#10;### 1. **Missing API Key Configuration**&#10;The `application.properties` file shows `ALIBAILIAN_API_KEY` but it's not properly formatted. It should be:&#10;```properties&#10;dashscope.api.key=your_actual_api_key_here&#10;```&#10;&#10;### 2. **404 Not Found Error**&#10;The 404 error suggests either:&#10;- The API endpoint is incorrect&#10;- The service you're trying to access doesn't exist&#10;- Your API key doesn't have proper permissions&#10;&#10;### 3. **Solution Steps**&#10;&#10;1. **Fix the API Key Configuration**:&#10;   Update your `application.properties`:&#10;   ```properties&#10;   dashscope.api.key=your_dashscope_api_key_here&#10;   ```&#10;&#10;2. **Verify the WanxImageModel Configuration**:&#10;   ```java&#10;   WanxImageModel model = WanxImageModel.builder()&#10;       .apiKey(System.getenv(&quot;dashscope.api.key&quot;)) // or load from properties&#10;       .modelName(&quot;wanx-v1&quot;) // or the latest model&#10;       .build();&#10;   ```&#10;&#10;3. **Check API Endpoint**:&#10;   Make sure you're using the correct base URL. The default should be fine, but if you need to override:&#10;   ```java&#10;   .baseUrl(&quot;https://dashscope.aliyuncs.com/api/v1&quot;)&#10;   ```&#10;&#10;4. **Verify Service Availability**:&#10;   - Check if the image generation service is available in your region&#10;   - Verify your account has proper permissions&#10;&#10;5. **Test with a Simple Request**:&#10;   ```java&#10;   ImageGenerationResponse response = model.generate(&#10;       new ImageGenerationRequest.Builder()&#10;           .prompt(&quot;a cat sitting on a laptop&quot;)&#10;           .n(1) // number of images&#10;           .size(&quot;1024x1024&quot;) // image size&#10;           .build()&#10;   );&#10;   ```&#10;&#10;If you're still getting 404 errors, you may need to:&#10;- Check AliCloud DashScope documentation for any API changes&#10;- Verify your account is properly activated for image generation services&#10;- Try the API with a simple curl request to isolate the issue" />
+                  <option name="cost" value="19642" />
+                  <option name="createdAt" value="1754645314091" />
+                  <option name="followup">
+                    <list />
+                  </option>
+                  <option name="id" value="019889026cdc7663a3658722c7ec517f" />
+                  <option name="knowledgeReferences">
+                    <list />
+                  </option>
+                  <option name="localReferences">
+                    <list>
+                      <LocalReferences>
+                        <option name="isRequestStage" value="true" />
+                        <option name="range">
+                          <RefRange />
+                        </option>
+                        <option name="uri" value="{&quot;path&quot;:&quot;file:///D:/code/java-shimmer-langchain4j/src/main/resources/application.properties&quot;}" />
+                      </LocalReferences>
+                    </list>
+                  </option>
+                  <option name="parser">
+                    <SimpleMarkdownStreamParser>
+                      <option name="columns">
+                        <list>
+                          <option value="99" />
+                          <option value="-1" />
+                          <option value="39" />
+                          <option value="106" />
+                          <option value="12" />
+                          <option value="41" />
+                          <option value="2" />
+                          <option value="-1" />
+                          <option value="29" />
+                          <option value="29" />
+                          <option value="30" />
+                          <option value="50" />
+                          <option value="45" />
+                          <option value="-1" />
+                          <option value="24" />
+                          <option value="-1" />
+                          <option value="36" />
+                          <option value="39" />
+                          <option value="15" />
+                          <option value="47" />
+                          <option value="5" />
+                          <option value="-1" />
+                          <option value="46" />
+                          <option value="9" />
+                          <option value="49" />
+                          <option value="76" />
+                          <option value="50" />
+                          <option value="15" />
+                          <option value="5" />
+                          <option value="-1" />
+                          <option value="25" />
+                          <option value="103" />
+                          <option value="9" />
+                          <option value="51" />
+                          <option value="5" />
+                          <option value="-1" />
+                          <option value="34" />
+                          <option value="69" />
+                          <option value="46" />
+                          <option value="-1" />
+                          <option value="33" />
+                          <option value="9" />
+                          <option value="52" />
+                          <option value="42" />
+                          <option value="46" />
+                          <option value="35" />
+                          <option value="42" />
+                          <option value="18" />
+                          <option value="4" />
+                          <option value="5" />
+                          <option value="-1" />
+                          <option value="51" />
+                          <option value="59" />
+                          <option value="72" />
+                          <option value="60" />
+                        </list>
+                      </option>
+                      <option name="content" value="This error indicates that there are multiple issues with your DashScope/Wanx image generation setup:&#10;&#10;### 1. **Missing API Key Configuration**&#10;The `application.properties` file shows `ALIBAILIAN_API_KEY` but it's not properly formatted. It should be:&#10;```properties&#10;dashscope.api.key=your_actual_api_key_here&#10;```&#10;&#10;### 2. **404 Not Found Error**&#10;The 404 error suggests either:&#10;- The API endpoint is incorrect&#10;- The service you're trying to access doesn't exist&#10;- Your API key doesn't have proper permissions&#10;&#10;### 3. **Solution Steps**&#10;&#10;1. **Fix the API Key Configuration**:&#10;   Update your `application.properties`:&#10;   ```properties&#10;   dashscope.api.key=your_dashscope_api_key_here&#10;   ```&#10;&#10;2. **Verify the WanxImageModel Configuration**:&#10;   ```java&#10;   WanxImageModel model = WanxImageModel.builder()&#10;       .apiKey(System.getenv(&quot;dashscope.api.key&quot;)) // or load from properties&#10;       .modelName(&quot;wanx-v1&quot;) // or the latest model&#10;       .build();&#10;   ```&#10;&#10;3. **Check API Endpoint**:&#10;   Make sure you're using the correct base URL. The default should be fine, but if you need to override:&#10;   ```java&#10;   .baseUrl(&quot;https://dashscope.aliyuncs.com/api/v1&quot;)&#10;   ```&#10;&#10;4. **Verify Service Availability**:&#10;   - Check if the image generation service is available in your region&#10;   - Verify your account has proper permissions&#10;&#10;5. **Test with a Simple Request**:&#10;   ```java&#10;   ImageGenerationResponse response = model.generate(&#10;       new ImageGenerationRequest.Builder()&#10;           .prompt(&quot;a cat sitting on a laptop&quot;)&#10;           .n(1) // number of images&#10;           .size(&quot;1024x1024&quot;) // image size&#10;           .build()&#10;   );&#10;   ```&#10;&#10;If you're still getting 404 errors, you may need to:&#10;- Check AliCloud DashScope documentation for any API changes&#10;- Verify your account is properly activated for image generation services&#10;- Try the API with a simple curl request to isolate the issue&#10;" />
+                      <option name="nodes">
+                        <list>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="This error indicates that there are multiple issues with your DashScope/Wanx image generation setup:" />
+                            <option name="contentId" value="2029640651" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value=" 1. **Missing API Key Configuration**" />
+                            <option name="contentId" value="-500702638" />
+                            <option name="level" value="3" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="heading" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="The `application.properties` file shows `ALIBAILIAN_API_KEY` but it's not properly formatted. It should be:" />
+                            <option name="contentId" value="-417464222" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="dashscope.api.key=your_actual_api_key_here&#10;" />
+                            <option name="contentId" value="1319554610" />
+                            <option name="expectEnding" value="```" />
+                            <option name="indentSize" value="0" />
+                            <option name="language" value="properties" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="code-block" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value=" 2. **404 Not Found Error**" />
+                            <option name="contentId" value="886110161" />
+                            <option name="level" value="3" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="heading" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="The 404 error suggests either:" />
+                            <option name="contentId" value="1992807059" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value=" The API endpoint is incorrect" />
+                            <option name="contentId" value="-202797051" />
+                            <option name="indentSize" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="startSymbol" value="-" />
+                            <option name="type" value="list-item" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value=" The service you're trying to access doesn't exist" />
+                            <option name="contentId" value="-22347244" />
+                            <option name="indentSize" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="startSymbol" value="-" />
+                            <option name="type" value="list-item" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value=" Your API key doesn't have proper permissions" />
+                            <option name="contentId" value="1845109946" />
+                            <option name="indentSize" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="startSymbol" value="-" />
+                            <option name="type" value="list-item" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value=" 3. **Solution Steps**" />
+                            <option name="contentId" value="-1521719803" />
+                            <option name="level" value="3" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="heading" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="1. **Fix the API Key Configuration**:" />
+                            <option name="contentId" value="453615560" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="   Update your `application.properties`:" />
+                            <option name="contentId" value="-1046886187" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="dashscope.api.key=your_dashscope_api_key_here&#10;" />
+                            <option name="contentId" value="739062602" />
+                            <option name="expectEnding" value="   ```" />
+                            <option name="indentSize" value="3" />
+                            <option name="language" value="properties" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="code-block" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="2. **Verify the WanxImageModel Configuration**:" />
+                            <option name="contentId" value="1743135696" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="WanxImageModel model = WanxImageModel.builder()&#10;    .apiKey(System.getenv(&quot;dashscope.api.key&quot;)) // or load from properties&#10;    .modelName(&quot;wanx-v1&quot;) // or the latest model&#10;    .build();&#10;" />
+                            <option name="contentId" value="-145338017" />
+                            <option name="expectEnding" value="   ```" />
+                            <option name="indentSize" value="3" />
+                            <option name="language" value="java" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="code-block" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="3. **Check API Endpoint**:" />
+                            <option name="contentId" value="-734973758" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="   Make sure you're using the correct base URL. The default should be fine, but if you need to override:" />
+                            <option name="contentId" value="1780019161" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value=".baseUrl(&quot;https://dashscope.aliyuncs.com/api/v1&quot;)&#10;" />
+                            <option name="contentId" value="1740747424" />
+                            <option name="expectEnding" value="   ```" />
+                            <option name="indentSize" value="3" />
+                            <option name="language" value="java" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="code-block" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="4. **Verify Service Availability**:" />
+                            <option name="contentId" value="-2120536141" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="Check if the image generation service is available in your region" />
+                            <option name="contentId" value="-1154887777" />
+                            <option name="indentSize" value="3" />
+                            <option name="settled" value="true" />
+                            <option name="startSymbol" value="-" />
+                            <option name="type" value="list-item" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="Verify your account has proper permissions" />
+                            <option name="contentId" value="-933209133" />
+                            <option name="indentSize" value="3" />
+                            <option name="settled" value="true" />
+                            <option name="startSymbol" value="-" />
+                            <option name="type" value="list-item" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="5. **Test with a Simple Request**:" />
+                            <option name="contentId" value="413848007" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="ImageGenerationResponse response = model.generate(&#10;    new ImageGenerationRequest.Builder()&#10;        .prompt(&quot;a cat sitting on a laptop&quot;)&#10;        .n(1) // number of images&#10;        .size(&quot;1024x1024&quot;) // image size&#10;        .build()&#10;);&#10;" />
+                            <option name="contentId" value="1266238905" />
+                            <option name="expectEnding" value="   ```" />
+                            <option name="indentSize" value="3" />
+                            <option name="language" value="java" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="code-block" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="If you're still getting 404 errors, you may need to:" />
+                            <option name="contentId" value="596064046" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value=" Check AliCloud DashScope documentation for any API changes" />
+                            <option name="contentId" value="-1492341539" />
+                            <option name="indentSize" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="startSymbol" value="-" />
+                            <option name="type" value="list-item" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value=" Verify your account is properly activated for image generation services" />
+                            <option name="contentId" value="2140838677" />
+                            <option name="indentSize" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="startSymbol" value="-" />
+                            <option name="type" value="list-item" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value=" Try the API with a simple curl request to isolate the issue" />
+                            <option name="contentId" value="1397627078" />
+                            <option name="indentSize" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="startSymbol" value="-" />
+                            <option name="type" value="list-item" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="false" />
+                            <option name="type" value="undetermined" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                        </list>
+                      </option>
+                      <option name="parserState">
+                        <ParserState>
+                          <option name="line" value="55" />
+                          <option name="column" value="-1" />
+                          <option name="offset" value="1869" />
+                          <option name="moveCursor" value="true" />
+                        </ParserState>
+                      </option>
+                    </SimpleMarkdownStreamParser>
+                  </option>
+                  <option name="references">
+                    <list />
+                  </option>
+                  <option name="role" value="assistant" />
+                  <option name="topic" value="" />
+                </UIChatMessage>
               </list>
             </option>
             <option name="messagesV3">
@@ -6974,6 +8066,42 @@
                     <ChatMessageExtra />
                   </option>
                 </ChatMessageV3>
+                <ChatMessageV3>
+                  <option name="role" value="user" />
+                  <option name="content" value="&#10;```&#10;teException: [FAILED] InvalidParameter: The following fields are required: function, base_image_url&#10;&#10;&#9;at dev.langchain4j.community.model.dashscope.WanxImageModel.doGenerate(WanxImageModel.java:119)&#10;&#9;at dev.langchain4j.community.model.dashscope.WanxImageModel.generate(WanxImageModel.java:91)&#10;&#9;at shimmer.ai.langchain4j.LLMDemoTest.testDashScopeWanx(LLMDemoTest.java:83)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#10;&#9;at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#10;&#9;at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#10;```" />
+                  <option name="extra">
+                    <ChatMessageExtra>
+                      <option name="agent" value="default" />
+                      <option name="cmd" value="default" />
+                    </ChatMessageExtra>
+                  </option>
+                </ChatMessageV3>
+                <ChatMessageV3>
+                  <option name="role" value="assistant" />
+                  <option name="content" value="This error message indicates that you're trying to use the WanxImageModel from LangChain4j's DashScope integration, but you're missing some required parameters in your request.&#10;&#10;The error specifically states that two fields are required:&#10;1. `function` - This likely refers to the specific image generation function you want to use&#10;2. `base_image_url` - This suggests you're trying to do image-to-image generation and need to provide a source image URL&#10;&#10;To fix this issue, you should:&#10;&#10;1. Make sure you're properly configuring the WanxImageModel with all required parameters&#10;2. If doing image generation, provide either:&#10;   - A text prompt for text-to-image generation&#10;   - Or a base image URL for image-to-image generation&#10;&#10;Here's an example of how you might properly configure it:&#10;&#10;```java&#10;WanxImageModel model = WanxImageModel.builder()&#10;    .apiKey(&quot;your-api-key&quot;)&#10;    .modelName(&quot;wanx-v1&quot;) // or whatever model you're using&#10;    .function(&quot;text-to-image&quot;) // or &quot;image-to-image&quot;&#10;    .baseImageUrl(&quot;https://example.com/image.jpg&quot;) // if doing image-to-image&#10;    .build();&#10;&#10;ImageGenerationResponse response = model.generate(&#10;    new ImageGenerationRequest.Builder()&#10;        .prompt(&quot;a beautiful sunset over mountains&quot;)&#10;        .build()&#10;);&#10;```&#10;&#10;If you're doing text-to-image generation, you might not need `base_image_url`, but you would need to specify the function as &quot;text-to-image&quot;." />
+                  <option name="extra">
+                    <ChatMessageExtra />
+                  </option>
+                </ChatMessageV3>
+                <ChatMessageV3>
+                  <option name="role" value="user" />
+                  <option name="content" value="&#10;```&#10;com.alibaba.dashscope.exception.ApiException: {&quot;statusCode&quot;:404,&quot;message&quot;:&quot;Not Found&quot;,&quot;code&quot;:&quot;response_error&quot;,&quot;isJson&quot;:false}&#10;; status body:{&quot;statusCode&quot;:404,&quot;message&quot;:&quot;Not Found&quot;,&quot;code&quot;:&quot;response_error&quot;,&quot;isJson&quot;:false}&#10;&#9;at com.alibaba.dashscope.protocol.okhttp.OkHttpHttpClient.send(OkHttpHttpClient.java:239)&#10;&#9;at com.alibaba.dashscope.api.AsynchronousApi.asyncCall(AsynchronousApi.java:68)&#10;&#9;at com.alibaba.dashscope.api.AsynchronousApi.call(AsynchronousApi.java:52)&#10;&#9;at com.alibaba.dashscope.aigc.imagesynthesis.ImageSynthesis.call(ImageSynthesis.java:145)&#10;&#9;at dev.langchain4j.community.model.dashscope.WanxImageModel.doGenerate(WanxImageModel.java:113)&#10;&#9;at dev.langchain4j.community.model.dashscope.WanxImageModel.generate(WanxImageModel.java:91)&#10;&#9;at shimmer.ai.langchain4j.LLMDemoTest.testDashScopeWanx(LLMDemoTest.java:83)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#10;&#9;at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#10;&#9;at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#10;Caused by: com.alibaba.dashscope.exception.ApiException: {&quot;statusCode&quot;:404,&quot;message&quot;:&quot;Not Found&quot;,&quot;code&quot;:&quot;response_error&quot;,&quot;isJson&quot;:false}; status body:{&quot;statusCode&quot;:404,&quot;message&quot;:&quot;Not Found&quot;,&quot;code&quot;:&quot;response_error&quot;,&quot;isJson&quot;:false}&#10;&#9;... 10 more&#10;```" />
+                  <option name="extra">
+                    <ChatMessageExtra>
+                      <option name="agent" value="default" />
+                      <option name="cmd" value="default" />
+                      <option name="code" value="ZORYZRORZM_ZKR_PVB" />
+                      <option name="path" value="D:\code\java-shimmer-langchain4j\src\main\resources\application.properties" />
+                    </ChatMessageExtra>
+                  </option>
+                </ChatMessageV3>
+                <ChatMessageV3>
+                  <option name="role" value="assistant" />
+                  <option name="content" value="This error indicates that there are multiple issues with your DashScope/Wanx image generation setup:&#10;&#10;### 1. **Missing API Key Configuration**&#10;The `application.properties` file shows `ALIBAILIAN_API_KEY` but it's not properly formatted. It should be:&#10;```properties&#10;dashscope.api.key=your_actual_api_key_here&#10;```&#10;&#10;### 2. **404 Not Found Error**&#10;The 404 error suggests either:&#10;- The API endpoint is incorrect&#10;- The service you're trying to access doesn't exist&#10;- Your API key doesn't have proper permissions&#10;&#10;### 3. **Solution Steps**&#10;&#10;1. **Fix the API Key Configuration**:&#10;   Update your `application.properties`:&#10;   ```properties&#10;   dashscope.api.key=your_dashscope_api_key_here&#10;   ```&#10;&#10;2. **Verify the WanxImageModel Configuration**:&#10;   ```java&#10;   WanxImageModel model = WanxImageModel.builder()&#10;       .apiKey(System.getenv(&quot;dashscope.api.key&quot;)) // or load from properties&#10;       .modelName(&quot;wanx-v1&quot;) // or the latest model&#10;       .build();&#10;   ```&#10;&#10;3. **Check API Endpoint**:&#10;   Make sure you're using the correct base URL. The default should be fine, but if you need to override:&#10;   ```java&#10;   .baseUrl(&quot;https://dashscope.aliyuncs.com/api/v1&quot;)&#10;   ```&#10;&#10;4. **Verify Service Availability**:&#10;   - Check if the image generation service is available in your region&#10;   - Verify your account has proper permissions&#10;&#10;5. **Test with a Simple Request**:&#10;   ```java&#10;   ImageGenerationResponse response = model.generate(&#10;       new ImageGenerationRequest.Builder()&#10;           .prompt(&quot;a cat sitting on a laptop&quot;)&#10;           .n(1) // number of images&#10;           .size(&quot;1024x1024&quot;) // image size&#10;           .build()&#10;   );&#10;   ```&#10;&#10;If you're still getting 404 errors, you may need to:&#10;- Check AliCloud DashScope documentation for any API changes&#10;- Verify your account is properly activated for image generation services&#10;- Try the API with a simple curl request to isolate the issue" />
+                  <option name="extra">
+                    <ChatMessageExtra />
+                  </option>
+                </ChatMessageV3>
               </list>
             </option>
             <option name="sessionId" value="019887688dce7ff1ac6cfa45e1a4fbe6" />
@@ -6983,27 +8111,27 @@
         <option name="conversationId" value="019887688dce7ff1ac6cfa45e1a4fbe6" />
         <option name="conversation">
           <Conversation>
-            <option name="createTime" value="1754623028517" />
+            <option name="createTime" value="1754638590329" />
             <option name="id" value="019887688dce7ff1ac6cfa45e1a4fbe6" />
             <option name="title" value="&#10;```&#10;java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test&#10;```" />
             <option name="turns">
               <list>
                 <Turn>
                   <option name="agent" value="" />
-                  <option name="answer" value="Gsv viili blf'iv vmxlfmgvirmt rh z `GrnvlfgVcxvkgrlm` dsvm gibrmt gl xlmmvxg gl gsv LkvmZR ZKR vmwklrmg (`zkr.lkvmzr.xln/e8/xszg/xlnkovgrlmh`). Gsrh gbkrxzoob rmwrxzgvh lmv lu gsv ulooldrmt rhhfvh:&#10;&#10;### Klhhryov Xzfhvh &amp; Hlofgrlmh:&#10;&#10;8. **Mvgdlip Xlmmvxgrergb Rhhfvh**&#10;   - Blfi nzxsrmv nzb mlg szev z hgzyov rmgvimvg xlmmvxgrlm.&#10;   - **Urc**: Xsvxp blfi mvgdlip xlmmvxgrlm, ivhgzig blfi ilfgvi, li gib z wruuvivmg mvgdlip.&#10;&#10;7. **Urivdzoo/Kilcb Yolxprmt gsv Ivjfvhg**&#10;   - Xliklizgv mvgdliph li urivdzooh nzb yolxp lfgtlrmt ivjfvhgh gl LkvmZR'h ZKR.&#10;   - **Urc**: Dsrgvorhg `zkr.lkvmzr.xln` li xlmurtfiv blfi kilcb hvggrmth (ru zkkorxzyov).&#10;&#10;6. **LkvmZR ZKR Wldmgrnv**&#10;   - LkvmZR'h hvievih nrtsg yv gvnklizirob fmzezrozyov.&#10;   - **Urc**: Xsvxp [LkvmZR'h hgzgfh kztv](sggkh://hgzgfh.lkvmzr.xln/) uli lfgztvh.&#10;&#10;5. **Ivjfvhg Grnvlfg Gll Hslig**&#10;   - Gsv wvuzfog grnvlfg rm OzmtXszrm5Q nzb yv gll old uli blfi mvgdlip.&#10;   - **Urc**: Rmxivzhv gsv grnvlfg rm blfi xorvmg xlmurtfizgrlm:&#10;     ```qzez&#10;     LkvmZrXszgNlwvo nlwvo = LkvmZrXszgNlwvo.yfrowvi()&#10;         .zkrPvb(&quot;blfi-zkr-pvb&quot;)&#10;         .grnvlfg(Wfizgrlm.luHvxlmwh(69)) // Rmxivzhv zh mvvwvw&#10;         .yfrow();&#10;     ```&#10;&#10;4. **WMH Ivhlofgrlm Rhhfvh**&#10;   - Blfi nzxsrmv nzb uzro gl ivhloev `zkr.lkvmzr.xln`.&#10;   - **Urc**: Gib krmtrmt gsv wlnzrm li uofhs blfi WMH xzxsv.&#10;&#10;3. **Tvltizksrxzo Ivhgirxgrlmh**&#10;   - LkvmZR nzb yv yolxpvw rm blfi ivtrlm.&#10;   - **Urc**: Fhv z EKM li xsvxp olxzo ivtfozgrlmh.&#10;&#10;### Wvyfttrmt Hgvkh:&#10;8. Gvhg xlmmvxgrergb nzmfzoob:&#10;   ```yzhs&#10;   xfio -e sggkh://zkr.lkvmzr.xln&#10;   ```&#10;   (Hslfow ivgfim z 595, yfg xlmurinh xlmmvxgrergb)&#10;&#10;7. Evirub ZKR pvbh zmw vmwklrmg:&#10;   ```qzez&#10;   Hbhgvn.lfg.kirmgom(&quot;Gvhgrmt xlmmvxgrergb...&quot;);&#10;   ```&#10;&#10;6. Vmzyov wvgzrovw olttrmt rm OzmtXszrm5Q gl hvv gsv ufoo ivjfvhg/ivhklmhv xbxov.&#10;&#10;Ru gsv rhhfv kvihrhgh zugvi gibrmt gsvhv hgvkh, hsziv nliv wvgzroh zylfg blfi vmerilmnvmg (v.t., ziv blf yvsrmw z xliklizgv mvgdlip? Fhrmt z EKM? Zmb ivxvmg xszmtvh gl blfi hvgfk?)." />
+                  <option name="answer" value="Gsrh viili nvhhztv rmwrxzgvh gszg blf'iv gibrmt gl fhv gsv DzmcRnztvNlwvo uiln OzmtXszrm5q'h WzhsHxlkv rmgvtizgrlm, yfg blf'iv nrhhrmt hlnv ivjfrivw kziznvgvih rm blfi ivjfvhg.&#10;&#10;Gsv viili hkvxrurxzoob hgzgvh gszg gdl urvowh ziv ivjfrivw:&#10;8. `ufmxgrlm` - Gsrh orpvob ivuvih gl gsv hkvxrurx rnztv tvmvizgrlm ufmxgrlm blf dzmg gl fhv&#10;7. `yzhv_rnztv_fio` - Gsrh hfttvhgh blf'iv gibrmt gl wl rnztv-gl-rnztv tvmvizgrlm zmw mvvw gl kilerwv z hlfixv rnztv FIO&#10;&#10;Gl urc gsrh rhhfv, blf hslfow:&#10;&#10;8. Nzpv hfiv blf'iv kilkviob xlmurtfirmt gsv DzmcRnztvNlwvo drgs zoo ivjfrivw kziznvgvih&#10;7. Ru wlrmt rnztv tvmvizgrlm, kilerwv vrgsvi:&#10;   - Z gvcg kilnkg uli gvcg-gl-rnztv tvmvizgrlm&#10;   - Li z yzhv rnztv FIO uli rnztv-gl-rnztv tvmvizgrlm&#10;&#10;Sviv'h zm vcznkov lu sld blf nrtsg kilkviob xlmurtfiv rg:&#10;&#10;```qzez&#10;DzmcRnztvNlwvo nlwvo = DzmcRnztvNlwvo.yfrowvi()&#10;    .zkrPvb(&quot;blfi-zkr-pvb&quot;)&#10;    .nlwvoMznv(&quot;dzmc-e8&quot;) // li dszgvevi nlwvo blf'iv fhrmt&#10;    .ufmxgrlm(&quot;gvcg-gl-rnztv&quot;) // li &quot;rnztv-gl-rnztv&quot;&#10;    .yzhvRnztvFio(&quot;sggkh://vcznkov.xln/rnztv.qkt&quot;) // ru wlrmt rnztv-gl-rnztv&#10;    .yfrow();&#10;&#10;RnztvTvmvizgrlmIvhklmhv ivhklmhv = nlwvo.tvmvizgv(&#10;    mvd RnztvTvmvizgrlmIvjfvhg.Yfrowvi()&#10;        .kilnkg(&quot;z yvzfgrufo hfmhvg levi nlfmgzrmh&quot;)&#10;        .yfrow()&#10;);&#10;```&#10;&#10;Ru blf'iv wlrmt gvcg-gl-rnztv tvmvizgrlm, blf nrtsg mlg mvvw `yzhv_rnztv_fio`, yfg blf dlfow mvvw gl hkvxrub gsv ufmxgrlm zh &quot;gvcg-gl-rnztv&quot;." />
                   <option name="chatResource" value="user" />
                   <option name="codeReferences">
                     <list />
                   </option>
                   <option name="command" value="" />
-                  <option name="conversationId" value="019887aeb54e744fa626eee42bfd1fdb" />
+                  <option name="conversationId" value="019887688dce7ff1ac6cfa45e1a4fbe6" />
                   <option name="historyDocumentMap">
                     <map>
-                      <entry key="file:///D:/code/java-shimmer-langchain4j/src/test/java/shimmer/ai/langchain4j/LLMDemoTest.java" value="package shimmer.ai.langchain4j;&#10;&#10;import com.shimmer.ai.langchain4j.MedicalAssistantApplication;&#10;import dev.langchain4j.model.openai.OpenAiChatModel;&#10;import org.junit.jupiter.api.Test;&#10;import org.springframework.beans.factory.annotation.Autowired;&#10;import org.springframework.boot.test.context.SpringBootTest;&#10;&#10;/**&#10; * @description: LLMDemoTest&#10; * ( ^_^ )&#10; * @Author: ZT&#10; * (✿◠‿◠)&#10; * @Date: 2025/8/8 9:45&#10; */&#10;@SpringBootTest(classes = MedicalAssistantApplication.class)&#10;public class LLMDemoTest {&#10;&#10;    @Test&#10;    public void test(){&#10;        //初始化模型&#10;        OpenAiChatModel model = OpenAiChatModel.builder()&#10;                //LangChain4j提供的代理服务器，该代理服务器会将演示密钥替换成真实密钥， 再将请求转发给OpenAI API&#10;                .baseUrl(&quot;http://langchain4j.dev/demo/openai/v1&quot;)&#10;                // 设置模型api地址（如果apiKey=&quot;demo&quot;，则可省略baseUrl的配置）&#10;                .apiKey(&quot;demo&quot;) //设置模型apiKey&#10;                .modelName(&quot;gpt-4o-mini&quot;) //设置模型名称&#10;                .build();&#10;        String answer = model.chat(&quot;我能用你干嘛&quot;);&#10;        System.out.println(answer); // Hello World&#10;    }&#10;&#10;    @Autowired&#10;    private OpenAiChatModel openAiChatModel;&#10;&#10;    @Test&#10;    public void testOpenAiChatModel() {&#10;        String answer = openAiChatModel.chat(&quot;我能用你干嘛&quot;);&#10;        System.out.println(answer); // Hello World&#10;    }&#10;&#10;}&#10;" />
+                      <entry key="file:///D:/code/java-shimmer-langchain4j/src/test/java/shimmer/ai/langchain4j/LLMDemoTest.java" value="package shimmer.ai.langchain4j;&#10;&#10;import com.shimmer.ai.langchain4j.MedicalAssistantApplication;&#10;import dev.langchain4j.community.model.dashscope.QwenChatModel;&#10;import dev.langchain4j.community.model.dashscope.WanxImageModel;&#10;import dev.langchain4j.data.image.Image;&#10;import dev.langchain4j.model.chat.ChatModel;&#10;import dev.langchain4j.model.ollama.OllamaChatModel;&#10;import dev.langchain4j.model.openai.OpenAiChatModel;&#10;import dev.langchain4j.model.output.Response;&#10;import org.junit.jupiter.api.Test;&#10;import org.springframework.beans.factory.annotation.Autowired;&#10;import org.springframework.boot.test.context.SpringBootTest;&#10;&#10;/**&#10; * @description: LLMDemoTest&#10; * ( ^_^ )&#10; * @Author: ZT&#10; * (✿◠‿◠)&#10; * @Date: 2025/8/8 9:45&#10; */&#10;@SpringBootTest(classes = MedicalAssistantApplication.class)&#10;public class LLMDemoTest {&#10;&#10;    @Test&#10;    public void test(){&#10;        //初始化模型&#10;        OpenAiChatModel model = OpenAiChatModel.builder()&#10;                //LangChain4j提供的代理服务器，该代理服务器会将演示密钥替换成真实密钥， 再将请求转发给OpenAI API&#10;                .baseUrl(&quot;http://langchain4j.dev/demo/openai/v1&quot;)&#10;                // 设置模型api地址（如果apiKey=&quot;demo&quot;，则可省略baseUrl的配置）&#10;                .apiKey(&quot;demo&quot;) //设置模型apiKey&#10;                .modelName(&quot;gpt-4o-mini&quot;) //设置模型名称&#10;                .build();&#10;        String answer = model.chat(&quot;我能用你干嘛&quot;);&#10;        System.out.println(answer); // Hello World&#10;    }&#10;&#10;    @Autowired&#10;    private OpenAiChatModel openAiChatModel;&#10;&#10;&#10;    @Test&#10;    public void testOpenAiChatModel() {&#10;        String answer = openAiChatModel.chat(&quot;我能用你干嘛&quot;);&#10;        System.out.println(answer); // Hello World&#10;    }&#10;&#10;    //    OpenAiChatModel implements ChatModel&#10;//    @Autowired&#10;//    private ChatModel chatModel;&#10;//    @Test&#10;//    public void testChatModel() {&#10;//        String answer = chatModel.chat(&quot;我能用你干嘛&quot;);&#10;//        System.out.println(answer); // Hello World&#10;//    }&#10;&#10;    @Autowired&#10;    private OllamaChatModel ollamaChatModel;&#10;    @Test&#10;    public void testOllamaChatModel() {&#10;        String answer = ollamaChatModel.chat(&quot;我能用你干嘛&quot;);&#10;        System.out.println(answer); // Hello World&#10;    }&#10;&#10;&#10;&#10;    @Autowired&#10;    private QwenChatModel qwenChatModel;&#10;    @Test&#10;    public void testQwenChatModel() {&#10;        String answer = qwenChatModel.chat(&quot;我能用你干嘛&quot;);&#10;        System.out.println(answer); // Hello World&#10;&#10;    }&#10;    //通义万象&#10;    @Test&#10;    public void testDashScopeWanx(){&#10;        WanxImageModel wanxImageModel = WanxImageModel.builder()&#10;                .modelName(&quot;wanx2.1-t2i-plus&quot;)&#10;                .apiKey(System.getenv(&quot;ALIBAILIAN_API_KEY&quot;)).build();&#10;&#10;        Response&lt;Image&gt; answer = wanxImageModel.generate(&quot;蒸汽朋克城市：巨大的齿轮和管道纵横交错，覆盖着整个城市的建筑。高耸入云的烟囱中喷出浓浓的黑烟，天空被染成了暗灰色。街道上，蒸汽驱动的机械车辆穿梭往来，发出嘈杂的轰鸣声。人们穿着皮质的长风衣、戴着护目镜和金属头盔，手中拿着各种机械工具和武器。一座巨大的钟楼矗立在城市中央，齿轮在钟楼上飞速转动，钟声沉闷而悠远。城市边缘，巨大的蒸汽动力飞行器缓缓升空，准备开始新的旅程。&quot;);&#10;        System.out.println(answer.content().url());&#10;    }&#10;}&#10;" />
                     </map>
                   </option>
-                  <option name="messageId" value="019887aeb7dd744fa626ffca621f0d8d" />
-                  <option name="question" value="&#10;```&#10;wve.ozmtxszrm5q.vcxvkgrlm.GrnvlfgVcxvkgrlm: R/L viili lm KLHG ivjfvhg uli &quot;sggkh://zkr.lkvmzr.xln/e8/xszg/xlnkovgrlmh&quot;: Xlmmvxg grnvw lfg&#10;```" />
+                  <option name="messageId" value="019888fdf59e7663a3657a4391e9e1cf" />
+                  <option name="question" value="&#10;```&#10;gvVcxvkgrlm: [UZROVW] RmezorwKziznvgvi: Gsv ulooldrmt urvowh ziv ivjfrivw: ufmxgrlm, yzhv_rnztv_fio&#10;&#10;&#9;zg wve.ozmtxszrm5q.xlnnfmrgb.nlwvo.wzhshxlkv.DzmcRnztvNlwvo.wlTvmvizgv(DzmcRnztvNlwvo.qzez:880)&#10;&#9;zg wve.ozmtxszrm5q.xlnnfmrgb.nlwvo.wzhshxlkv.DzmcRnztvNlwvo.tvmvizgv(DzmcRnztvNlwvo.qzez:08)&#10;&#9;zg hsrnnvi.zr.ozmtxszrm5q.OONWvnlGvhg.gvhgWzhsHxlkvDzmc(OONWvnlGvhg.qzez:16)&#10;&#9;zg qzez.yzhv/qzez.ozmt.ivuovxg.Nvgslw.rmelpv(Nvgslw.qzez:431)&#10;&#9;zg qzez.yzhv/qzez.fgro.ZiizbOrhg.uliVzxs(ZiizbOrhg.qzez:8488)&#10;&#9;zg qzez.yzhv/qzez.fgro.ZiizbOrhg.uliVzxs(ZiizbOrhg.qzez:8488)&#10;```" />
                   <option name="rating" value="UNRATED" />
                   <option name="referenceBeans">
                     <list />
@@ -7015,70 +8143,46 @@
                 </Turn>
                 <Turn>
                   <option name="agent" value="" />
-                  <option name="answer" value="SGGK 598 Fmzfgsliravw 错误表示客户端尝试访问受保护的资源但未提供有效的身份验证凭据，或者提供的凭据无效。以下是解决此错误的一些常见原因和解决方法：&#10;&#10;### 常见原因&#10;&#10;8. **缺少认证信息**：请求中未包含必要的认证头（如 `Zfgslirazgrlm`）。&#10;7. **无效凭证**：提供的用户名/密码、ZKR密钥或令牌不正确或已过期。&#10;6. **认证方案不匹配**：服务器期望的认证方式与客户端提供的不一致。&#10;5. **跨域问题**：XLIH 预检请求失败导致认证信息未被发送。&#10;4. **会话过期**：之前有效的会话已超时。&#10;&#10;### 解决方案&#10;&#10;8. **检查认证头**：确保请求包含正确的认证头，例如：&#10;   ```sggk&#10;   TVG /zkr/ivhlfixv SGGK/8.8&#10;   Slhg: vcznkov.xln&#10;   Zfgslirazgrlm: Yvzivi blfi_zxxvhh_glpvm_sviv&#10;   ```&#10;7. **验证凭证有效性**：检查 ZKR 密钥、令牌或用户名密码是否正确且未过期。对于 QDG 令牌，可以使用在线工具验证其有效性。&#10;6. **确认认证方案**：服务器可能要求特定的认证方案（Yzhrx, Yvzivi, Wrtvhg 等），确保客户端使用正确的方案。&#10;5. **处理 XLIH 问题**：如果是前端应用遇到 598，确保正确处理 XLIH：&#10;   ```qzezhxirkg&#10;   uvgxs('sggkh://zkr.vcznkov.xln/wzgz', {&#10;       nvgslw: 'TVG',&#10;       xivwvmgrzoh: 'rmxofwv', // 包含凭据&#10;       svzwvih: {&#10;           'Zfgslirazgrlm': 'Yvzivi ' + glpvm,&#10;           'Xlmgvmg-Gbkv': 'zkkorxzgrlm/qhlm'&#10;       }&#10;   });&#10;   ```&#10;4. **实现令牌刷新机制**：对于过期令牌，实现自动刷新：&#10;   ```qzezhxirkg&#10;   zhbmx ufmxgrlm uvgxsDrgsZfgs(fio, lkgrlmh = {}) {&#10;       xlmhg ivhklmhv = zdzrg uvgxs(fio, lkgrlmh);&#10;       ru (ivhklmhv.hgzgfh === 598) { // 尝试刷新令牌&#10;           xlmhg ivuivhsIvhklmhv = zdzrg ivuivhsGlpvm();&#10;           ru (ivuivhsIvhklmhv.lp) { // 使用新令牌重试原始请求&#10;               lkgrlmh.svzwvih.Zfgslirazgrlm = 'Yvzivi ' + mvdGlpvm;&#10;               ivgfim uvgxs(fio, lkgrlmh);&#10;           }&#10;       }&#10;       ivgfim ivhklmhv;&#10;   }&#10;   ```&#10;&#10;通过以上方法，可以有效诊断和解决 SGGK 598 未授权问题，确保应用的安全性和可用性。" />
+                  <option name="answer" value="Gsrh viili rmwrxzgvh gszg gsviv ziv nfogrkov rhhfvh drgs blfi WzhsHxlkv/Dzmc rnztv tvmvizgrlm hvgfk:&#10;&#10;### 8. **Nrhhrmt ZKR Pvb Xlmurtfizgrlm**&#10;Gsv `zkkorxzgrlm.kilkvigrvh` urov hsldh `ZORYZRORZM_ZKR_PVB` yfg rg'h mlg kilkviob ulinzggvw. Rg hslfow yv:&#10;```kilkvigrvh&#10;wzhshxlkv.zkr.pvb=blfi_zxgfzo_zkr_pvb_sviv&#10;```&#10;&#10;### 7. **595 Mlg Ulfmw Viili**&#10;Gsv 595 viili hfttvhgh vrgsvi:&#10;- Gsv ZKR vmwklrmg rh rmxliivxg&#10;- Gsv hvierxv blf'iv gibrmt gl zxxvhh wlvhm'g vcrhg&#10;- Blfi ZKR pvb wlvhm'g szev kilkvi kvinrhhrlmh&#10;&#10;### 6. **Hlofgrlm Hgvkh**&#10;&#10;8. **Urc gsv ZKR Pvb Xlmurtfizgrlm**:&#10;   Fkwzgv blfi `zkkorxzgrlm.kilkvigrvh`:&#10;   ```kilkvigrvh&#10;   wzhshxlkv.zkr.pvb=blfi_wzhshxlkv_zkr_pvb_sviv&#10;   ```&#10;&#10;7. **Evirub gsv DzmcRnztvNlwvo Xlmurtfizgrlm**:&#10;   ```qzez&#10;   DzmcRnztvNlwvo nlwvo = DzmcRnztvNlwvo.yfrowvi()&#10;       .zkrPvb(Hbhgvn.tvgvme(&quot;wzhshxlkv.zkr.pvb&quot;)) // li olzw uiln kilkvigrvh&#10;       .nlwvoMznv(&quot;dzmc-e8&quot;) // li gsv ozgvhg nlwvo&#10;       .yfrow();&#10;   ```&#10;&#10;6. **Xsvxp ZKR Vmwklrmg**:&#10;   Nzpv hfiv blf'iv fhrmt gsv xliivxg yzhv FIO. Gsv wvuzfog hslfow yv urmv, yfg ru blf mvvw gl leviirwv:&#10;   ```qzez&#10;   .yzhvFio(&quot;sggkh://wzhshxlkv.zorbfmxh.xln/zkr/e8&quot;)&#10;   ```&#10;&#10;5. **Evirub Hvierxv Zezrozyrorgb**:&#10;   - Xsvxp ru gsv rnztv tvmvizgrlm hvierxv rh zezrozyov rm blfi ivtrlm&#10;   - Evirub blfi zxxlfmg szh kilkvi kvinrhhrlmh&#10;&#10;4. **Gvhg drgs z Hrnkov Ivjfvhg**:&#10;   ```qzez&#10;   RnztvTvmvizgrlmIvhklmhv ivhklmhv = nlwvo.tvmvizgv(&#10;       mvd RnztvTvmvizgrlmIvjfvhg.Yfrowvi()&#10;           .kilnkg(&quot;z xzg hrggrmt lm z ozkglk&quot;)&#10;           .m(8) // mfnyvi lu rnztvh&#10;           .hrav(&quot;8975c8975&quot;) // rnztv hrav&#10;           .yfrow()&#10;   );&#10;   ```&#10;&#10;Ru blf'iv hgroo tvggrmt 595 viilih, blf nzb mvvw gl:&#10;- Xsvxp ZorXolfw WzhsHxlkv wlxfnvmgzgrlm uli zmb ZKR xszmtvh&#10;- Evirub blfi zxxlfmg rh kilkviob zxgrezgvw uli rnztv tvmvizgrlm hvierxvh&#10;- Gib gsv ZKR drgs z hrnkov xfio ivjfvhg gl rhlozgv gsv rhhfv" />
                   <option name="chatResource" value="user" />
                   <option name="codeReferences">
-                    <list />
+                    <list>
+                      <CodeReferencesBean>
+                        <option name="content" value="ZORYZRORZM_ZKR_PVB" />
+                        <option name="end_line" value="30" />
+                        <option name="filename" value="application.properties" />
+                        <option name="language" value="Properties" />
+                        <option name="range">
+                          <Range>
+                            <option name="end">
+                              <Position>
+                                <option name="character" value="71" />
+                                <option name="line" value="30" />
+                              </Position>
+                            </option>
+                            <option name="start">
+                              <Position>
+                                <option name="character" value="53" />
+                                <option name="line" value="30" />
+                              </Position>
+                            </option>
+                          </Range>
+                        </option>
+                        <option name="start_line" value="30" />
+                        <option name="type" value="editor" />
+                        <option name="url" value="file:///D:/code/java-shimmer-langchain4j/src/main/resources/application.properties" />
+                      </CodeReferencesBean>
+                    </list>
                   </option>
                   <option name="command" value="" />
                   <option name="conversationId" value="019887688dce7ff1ac6cfa45e1a4fbe6" />
                   <option name="historyDocumentMap">
                     <map>
-                      <entry key="file:///D:/code/java-shimmer-langchain4j/src/main/resources/application.properties" value="server.port=8080&#10;&#10;&#10;#langchain4j测试模型&#10;#langchain4j.open-ai.chat-model.base-url=http://langchain4j.dev/demo/openai/v1&#10;#langchain4j.open-ai.chat-model.api-key=demo&#10;#langchain4j.open-ai.chat-model.model-name=gpt-4o-mini&#10;&#10;&#10;#Deepseek测试模型&#10;#deepseek-chat 模型指向 DeepSeek-V3-0324， 通过指定 model='deepseek-chat' 调用。&#10;#deepseek-reasoner 模型指向 DeepSeek-R1-0528， 通过指定 model='deepseek-reasoner' 调用。&#10;langchain4j.open-ai.chat-model.base-url=https://api.deepseek.com/v1&#10;#langchain4j.open-ai.chat-model.api-key=sk-314978b0c51f4739abc6c3bd8ee2d637&#10;#langchain4j.open-ai.chat-model.api-key=${DEEPSEEK_API_KEY}&#10;langchain4j.open-ai.chat-model.api-key=${DEEPSEEK_API_KEY:}&#10;langchain4j.open-ai.chat-model.model-name=deepseek-chat&#10;&#10;#模型日志&#10;langchain4j.open-ai.chat-model.log-requests=true&#10;langchain4j.open-ai.chat-model.log-responses=true&#10;&#10;&#10;#????&#10;logging.level.root=debug" />
+                      <entry key="file:///D:/code/java-shimmer-langchain4j/src/main/resources/application.properties" value="server.port=8080&#10;&#10;&#10;#langchain4j????&#10;#langchain4j.open-ai.chat-model.base-url=http://langchain4j.dev/demo/openai/v1&#10;#langchain4j.open-ai.chat-model.api-key=demo&#10;#langchain4j.open-ai.chat-model.model-name=gpt-4o-mini&#10;&#10;&#10;#Deepseek????&#10;#deepseek-chat ???? DeepSeek-V3-0324? ???? model='deepseek-chat' ???&#10;#deepseek-reasoner ???? DeepSeek-R1-0528? ???? model='deepseek-reasoner' ???&#10;langchain4j.open-ai.chat-model.base-url=https://api.deepseek.com/v1&#10;langchain4j.open-ai.chat-model.api-key=${DEEPSEEK_API_KEY}&#10;langchain4j.open-ai.chat-model.model-name=deepseek-chat&#10;&#10;#????&#10;langchain4j.open-ai.chat-model.log-requests=true&#10;langchain4j.open-ai.chat-model.log-responses=true&#10;&#10;&#10;#ollama????&#10;langchain4j.ollama.chat-model.base-url=http://localhost:11434&#10;langchain4j.ollama.chat-model.model-name=deepseek-r1:1.5b&#10;langchain4j.ollama.chat-model.log-requests=true&#10;langchain4j.ollama.chat-model.log-responses=true&#10;&#10;&#10;&#10;#??????&#10;langchain4j.community.dashscope.chat-model.api-key=${ALIBAILIAN_API_KEY}&#10;langchain4j.community.dashscope.chat-model.model-name=qwen-max&#10;#????&#10;logging.level.root=debug&#10;" />
                     </map>
                   </option>
-                  <option name="messageId" value="019887cdc635744fa62707b67b579035" />
-                  <option name="question" value="&#10;```&#10; 598 Fmzfgsliravw: [ml ylwb]&#10;```" />
-                  <option name="rating" value="UNRATED" />
-                  <option name="referenceBeans">
-                    <list />
-                  </option>
-                  <option name="status" value="SUCCESS" />
-                  <option name="variables">
-                    <list />
-                  </option>
-                </Turn>
-                <Turn>
-                  <option name="agent" value="" />
-                  <option name="answer" value="Gsrh viili lxxfih yvxzfhv Nzevm/Tizwov xzmmlg ivhloev gsv evihrlm mfnyvi uli gsv `ozmtxszrm5q-xlnnfmrgb-wzhshxlkv-hkirmt-yllg-hgzigvi` wvkvmwvmxb. Sviv'h sld gl urc rg:&#10;&#10;### Hlofgrlm&#10;&#10;8. **Vckorxrgob hkvxrub gsv evihrlm**  &#10;   Ivkozxv `mfoo` drgs z ezorw evihrlm uiln [Nzevm Xvmgizo](sggkh://xvmgizo.hlmzgbkv.xln/zigruzxg/wve.ozmtxszrm5q/ozmtxszrm5q-xlnnfmrgb-wzhshxlkv-hkirmt-yllg-hgzigvi).  &#10;   Vcznkov uli Nzevm (`kln.cno`):&#10;   ```cno&#10;   &lt;wvkvmwvmxb&gt;&#10;       &lt;tilfkRw&gt;wve.ozmtxszrm5q&lt;/tilfkRw&gt;&#10;       &lt;zigruzxgRw&gt;ozmtxszrm5q-xlnnfmrgb-wzhshxlkv-hkirmt-yllg-hgzigvi&lt;/zigruzxgRw&gt;&#10;       &lt;evihrlm&gt;9.74.9&lt;/evihrlm&gt; &lt;!-- Fhv ozgvhg evihrlm --&gt;&#10;   &lt;/wvkvmwvmxb&gt;&#10;   ```&#10;&#10;7. **Ru fhrmt Hkirmt Yllg'h wvkvmwvmxb nzmztvnvmg**  &#10;   Vmhfiv blf'ev rnkligvw OzmtXszrm5Q'h YLN (Yroo lu Nzgvirzoh):&#10;   ```cno&#10;   &lt;wvkvmwvmxbNzmztvnvmg&gt;&#10;       &lt;wvkvmwvmxrvh&gt;&#10;           &lt;wvkvmwvmxb&gt;&#10;               &lt;tilfkRw&gt;wve.ozmtxszrm5q&lt;/tilfkRw&gt;&#10;               &lt;zigruzxgRw&gt;ozmtxszrm5q-yln&lt;/zigruzxgRw&gt;&#10;               &lt;evihrlm&gt;9.74.9&lt;/evihrlm&gt;&#10;               &lt;gbkv&gt;kln&lt;/gbkv&gt;&#10;               &lt;hxlkv&gt;rnklig&lt;/hxlkv&gt;&#10;           &lt;/wvkvmwvmxb&gt;&#10;       &lt;/wvkvmwvmxrvh&gt;&#10;   &lt;/wvkvmwvmxbNzmztvnvmg&gt;&#10;   ```&#10;&#10;6. **Uli Tizwov fhvih**  &#10;   ```tizwov&#10;   rnkovnvmgzgrlm 'wve.ozmtxszrm5q:ozmtxszrm5q-xlnnfmrgb-wzhshxlkv-hkirmt-yllg-hgzigvi:9.74.9'&#10;   ```&#10;&#10;### Xlnnlm Xzfhvh&#10;- Nrhhrmt evihrlm rm `kln.cno`/`yfrow.tizwov`&#10;- Rmxliivxg wvkvmwvmxb hbmgzc&#10;- Fhrmt z hmzkhslg evihrlm drgslfg kilkvi ivklhrglib xlmurtfizgrlm&#10;&#10;### Evirurxzgrlm&#10;Zugvi urcrmt, ifm:&#10;```yzhs&#10;nem wvkvmwvmxb:givv | tivk wzhshxlkv  # Nzevm&#10;./tizwovd wvkvmwvmxrvh | tivk wzhshxlkv  # Tizwov&#10;```&#10;Gsrh hslfow hsld gsv ivhloevw evihrlm. Ru rhhfvh kvihrhg, xovzm zmw ivyfrow blfi kilqvxg (`nem xovzm rmhgzoo` li `tizwov xovzm yfrow`)." />
-                  <option name="chatResource" value="user" />
-                  <option name="codeReferences">
-                    <list />
-                  </option>
-                  <option name="command" value="" />
-                  <option name="conversationId" value="019887688dce7ff1ac6cfa45e1a4fbe6" />
-                  <option name="historyDocumentMap">
-                    <map>
-                      <entry key="file:///D:/code/java-shimmer-langchain4j/pom.xml" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;&#10;         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;&#10;    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;&#10;&#10;    &lt;groupId&gt;com.shimmer&lt;/groupId&gt;&#10;    &lt;artifactId&gt;java-shimmer-langchain4j&lt;/artifactId&gt;&#10;    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;&#10;&#10;    &lt;properties&gt;&#10;        &lt;maven.compiler.source&gt;17&lt;/maven.compiler.source&gt;&#10;        &lt;maven.compiler.target&gt;17&lt;/maven.compiler.target&gt;&#10;        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;&#10;        &lt;spring-boot.version&gt;3.2.6&lt;/spring-boot.version&gt;&#10;        &lt;knife4j.version&gt;4.3.0&lt;/knife4j.version&gt;&#10;&lt;!--        &lt;langchain4j.version&gt;1.0.0-beta3&lt;/langchain4j.version&gt;--&gt;&#10;&lt;!--        &lt;langchain4j.version&gt;1.2.0&lt;/langchain4j.version&gt;--&gt;&#10;&lt;!--        默认写最高版本不带beta的版本，配置了全局适应版本会自己适配相关版本--&gt;&#10;        &lt;langchain4j.version&gt;1.3.0&lt;/langchain4j.version&gt;&#10;        &lt;mybatis-plus.version&gt;3.5.11&lt;/mybatis-plus.version&gt;&#10;    &lt;/properties&gt;&#10;&#10;    &lt;dependencies&gt;&#10;        &lt;!-- web应用程序核心依赖 --&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;&#10;        &lt;/dependency&gt;&#10;        &lt;!-- 编写和运行测试用例 --&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;&#10;            &lt;scope&gt;test&lt;/scope&gt;&#10;        &lt;/dependency&gt;&#10;        &lt;!-- 前后端分离中的后端接口测试工具 --&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;com.github.xiaoymin&lt;/groupId&gt;&#10;            &lt;artifactId&gt;knife4j-openapi3-jakarta-spring-boot-starter&lt;/artifactId&gt;&#10;            &lt;version&gt;${knife4j.version}&lt;/version&gt;&#10;        &lt;/dependency&gt;&#10;        &lt;!-- 基于open-ai的langchain4j接口：ChatGPT、deepseek都是open-ai标准下的大模型 --&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;dev.langchain4j&lt;/groupId&gt;&#10;            &lt;artifactId&gt;langchain4j-open-ai-spring-boot-starter&lt;/artifactId&gt;&#10;        &lt;/dependency&gt;&#10;        &lt;!-- 接入ollama --&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;dev.langchain4j&lt;/groupId&gt;&#10;            &lt;artifactId&gt;langchain4j-ollama-spring-boot-starter&lt;/artifactId&gt;&#10;        &lt;/dependency&gt;&#10;        &lt;!-- 接入阿里云百炼平台 --&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;dev.langchain4j&lt;/groupId&gt;&#10;            &lt;artifactId&gt;langchain4j-community-dashscope-spring-boot-starter&lt;/artifactId&gt;&#10;        &lt;/dependency&gt;&#10;    &lt;/dependencies&gt;&#10;    &lt;dependencyManagement&gt;&#10;        &lt;dependencies&gt;&#10;            &lt;!--引入SpringBoot依赖管理清单--&gt;&#10;            &lt;dependency&gt;&#10;                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;                &lt;artifactId&gt;spring-boot-dependencies&lt;/artifactId&gt;&#10;                &lt;version&gt;${spring-boot.version}&lt;/version&gt;&#10;                &lt;type&gt;pom&lt;/type&gt;&#10;                &lt;scope&gt;import&lt;/scope&gt;&#10;            &lt;/dependency&gt;&#10;            &lt;!--引入langchain4j依赖管理清单，自动适配langchain所有版本--&gt;&#10;            &lt;dependency&gt;&#10;                &lt;groupId&gt;dev.langchain4j&lt;/groupId&gt;&#10;                &lt;artifactId&gt;langchain4j-bom&lt;/artifactId&gt;&#10;                &lt;version&gt;${langchain4j.version}&lt;/version&gt;&#10;                &lt;type&gt;pom&lt;/type&gt;&#10;                &lt;scope&gt;import&lt;/scope&gt;&#10;            &lt;/dependency&gt;&#10;            &lt;!--引入百炼依赖管理清单--&gt;&#10;            &lt;dependency&gt;&#10;                &lt;groupId&gt;dev.langchain4j&lt;/groupId&gt;&#10;                &lt;artifactId&gt;langchain4j-community-bom&lt;/artifactId&gt;&#10;                &lt;version&gt;${langchain4j.version}&lt;/version&gt;&#10;                &lt;type&gt;pom&lt;/type&gt;&#10;                &lt;scope&gt;import&lt;/scope&gt;&#10;            &lt;/dependency&gt;&#10;        &lt;/dependencies&gt;&#10;    &lt;/dependencyManagement&gt;&#10;&lt;/project&gt;" />
-                    </map>
-                  </option>
-                  <option name="messageId" value="0198886c7e7d744fa6270d0bf1e34745" />
-                  <option name="question" value="&#10;```&#10;Uli zigruzxg {wve.ozmtxszrm5q:ozmtxszrm5q-xlnnfmrgb-wzhshxlkv-hkirmt-yllg-hgzigvi:mfoo:qzi}: Gsv evihrlm xzmmlg yv vnkgb.&#10;```" />
-                  <option name="rating" value="UNRATED" />
-                  <option name="referenceBeans">
-                    <list />
-                  </option>
-                  <option name="status" value="SUCCESS" />
-                  <option name="variables">
-                    <list />
-                  </option>
-                </Turn>
-                <Turn>
-                  <option name="agent" value="" />
-                  <option name="answer" value="Gsrh viili lxxfih yvxzfhv Nzevm xzmmlg urmw gsv **OzmtXszrm5Q Xlnnfmrgb YLN (Yroo lu Nzgvirzoh)** evihrlm `8.6.9` rm **Zoryzyz'h Nzevm ivklhrglib (Zorbfm)**.  &#10;&#10;### **Dsb Gsrh Szkkvmh**&#10;- **Zorbfm Nzevm nriili (`nzevm.zorbfm.xln`)** nzb mlg szev hbmxvw gsv ozgvhg OzmtXszrm5Q zigruzxgh.&#10;- **OzmtXszrm5Q'h YLN (`ozmtxszrm5q-xlnnfmrgb-yln`)** nrtsg mlg yv zezrozyov rm Zorbfm (rg'h kirnzirob slhgvw rm **Nzevm Xvmgizo**).&#10;&#10;---&#10;&#10;### **Hlofgrlmh**&#10;&#10;#### **8. Zww Nzevm Xvmgizo zh z Uzooyzxp Ivklhrglib**&#10;Vmhfiv Nzevm xsvxph **Nzevm Xvmgizo** ru gsv zigruzxg rh nrhhrmt rm Zorbfm.  &#10;Zww gsrh gl blfi `kln.cno`:&#10;```cno&#10;&lt;ivklhrglirvh&gt;&#10;    &lt;ivklhrglib&gt;&#10;        &lt;rw&gt;zorbfm&lt;/rw&gt;&#10;        &lt;fio&gt;sggk://nzevm.zorbfm.xln/mvcfh/xlmgvmg/tilfkh/kfyorx/&lt;/fio&gt;&#10;    &lt;/ivklhrglib&gt;&#10;    &lt;ivklhrglib&gt;&#10;        &lt;rw&gt;xvmgizo&lt;/rw&gt;&#10;        &lt;fio&gt;sggkh://ivkl.nzevm.zkzxsv.lit/nzevm7/&lt;/fio&gt;&#10;    &lt;/ivklhrglib&gt;&#10;&lt;/ivklhrglirvh&gt;&#10;```&#10;&#10;#### **7. Ulixv Nzevm gl Fhv Xvmgizo Rmhgvzw lu Zorbfm**&#10;Ru Zorbfm wlvhm'g szev gsv ozgvhg evihrlm, hprk rg gvnklizirob:&#10;```cno&#10;&lt;ivklhrglirvh&gt;&#10;    &lt;ivklhrglib&gt;&#10;        &lt;rw&gt;xvmgizo&lt;/rw&gt;&#10;        &lt;fio&gt;sggkh://ivkl.nzevm.zkzxsv.lit/nzevm7/&lt;/fio&gt;&#10;    &lt;/ivklhrglib&gt;&#10;&lt;/ivklhrglirvh&gt;&#10;```&#10;&#10;#### **6. Evirub gsv Xliivxg YLN Wvkvmwvmxb**&#10;Vmhfiv blf'iv fhrmt gsv irtsg YLN (`ozmtxszrm5q-yln` rmhgvzw lu `ozmtxszrm5q-xlnnfmrgb-yln`).  &#10;Vcznkov:&#10;```cno&#10;&lt;wvkvmwvmxbNzmztvnvmg&gt;&#10;    &lt;wvkvmwvmxrvh&gt;&#10;        &lt;wvkvmwvmxb&gt;&#10;            &lt;tilfkRw&gt;wve.ozmtxszrm5q&lt;/tilfkRw&gt;&#10;            &lt;zigruzxgRw&gt;ozmtxszrm5q-yln&lt;/zigruzxgRw&gt;&#10;            &lt;evihrlm&gt;9.74.9&lt;/evihrlm&gt; &lt;!-- Ozgvhg hgzyov evihrlm --&gt;&#10;            &lt;gbkv&gt;kln&lt;/gbkv&gt;&#10;            &lt;hxlkv&gt;rnklig&lt;/hxlkv&gt;&#10;        &lt;/wvkvmwvmxb&gt;&#10;    &lt;/wvkvmwvmxrvh&gt;&#10;&lt;/wvkvmwvmxbNzmztvnvmg&gt;&#10;```&#10;&#10;#### **5. Xovzm &amp; Ivuivhs Nzevm**&#10;Zugvi fkwzgrmt `kln.cno`, ifm:&#10;```yzhs&#10;nem xovzm rmhgzoo -F&#10;```&#10;(`-F` ulixvh Nzevm gl fkwzgv wvkvmwvmxrvh)&#10;&#10;---&#10;&#10;### **Zogvimzgrev Urcvh**&#10;- **Xsvxp gsv ozgvhg evihrlm** lm [Nzevm Xvmgizo](sggkh://xvmgizo.hlmzgbkv.xln/zigruzxg/wve.ozmtxszrm5q/ozmtxszrm5q-yln).&#10;- **Fhv z EKM** ru blf'iv rm z ivtrlm dsviv Nzevm Xvmgizo rh yolxpvw.&#10;- **Xsvxp xliklizgv kilcb hvggrmth** ru blf'iv yvsrmw z urivdzoo.&#10;&#10;Ru gsv rhhfv kvihrhgh, hsziv blfi ufoo `kln.cno` uli ufigsvi wvyfttrmt. " />
-                  <option name="chatResource" value="user" />
-                  <option name="codeReferences">
-                    <list />
-                  </option>
-                  <option name="command" value="" />
-                  <option name="conversationId" value="019887688dce7ff1ac6cfa45e1a4fbe6" />
-                  <option name="historyDocumentMap">
-                    <map>
-                      <entry key="file:///D:/code/java-shimmer-langchain4j/pom.xml" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;&#10;         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;&#10;    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;&#10;&#10;    &lt;groupId&gt;com.shimmer&lt;/groupId&gt;&#10;    &lt;artifactId&gt;java-shimmer-langchain4j&lt;/artifactId&gt;&#10;    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;&#10;&#10;    &lt;properties&gt;&#10;        &lt;maven.compiler.source&gt;17&lt;/maven.compiler.source&gt;&#10;        &lt;maven.compiler.target&gt;17&lt;/maven.compiler.target&gt;&#10;        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;&#10;        &lt;spring-boot.version&gt;3.2.6&lt;/spring-boot.version&gt;&#10;        &lt;knife4j.version&gt;4.3.0&lt;/knife4j.version&gt;&#10;&lt;!--        &lt;langchain4j.version&gt;1.0.0-beta3&lt;/langchain4j.version&gt;--&gt;&#10;&lt;!--        &lt;langchain4j.version&gt;1.2.0&lt;/langchain4j.version&gt;--&gt;&#10;&lt;!--        默认写最高版本不带beta的版本，配置了全局适应版本会自己适配相关版本--&gt;&#10;        &lt;langchain4j.version&gt;1.3.0&lt;/langchain4j.version&gt;&#10;        &lt;mybatis-plus.version&gt;3.5.11&lt;/mybatis-plus.version&gt;&#10;    &lt;/properties&gt;&#10;&#10;    &lt;dependencies&gt;&#10;        &lt;!-- web应用程序核心依赖 --&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;&#10;        &lt;/dependency&gt;&#10;        &lt;!-- 编写和运行测试用例 --&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;&#10;            &lt;scope&gt;test&lt;/scope&gt;&#10;        &lt;/dependency&gt;&#10;        &lt;!-- 前后端分离中的后端接口测试工具 --&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;com.github.xiaoymin&lt;/groupId&gt;&#10;            &lt;artifactId&gt;knife4j-openapi3-jakarta-spring-boot-starter&lt;/artifactId&gt;&#10;            &lt;version&gt;${knife4j.version}&lt;/version&gt;&#10;        &lt;/dependency&gt;&#10;        &lt;!-- 基于open-ai的langchain4j接口：ChatGPT、deepseek都是open-ai标准下的大模型 --&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;dev.langchain4j&lt;/groupId&gt;&#10;            &lt;artifactId&gt;langchain4j-open-ai-spring-boot-starter&lt;/artifactId&gt;&#10;        &lt;/dependency&gt;&#10;        &lt;!-- 接入ollama --&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;dev.langchain4j&lt;/groupId&gt;&#10;            &lt;artifactId&gt;langchain4j-ollama-spring-boot-starter&lt;/artifactId&gt;&#10;        &lt;/dependency&gt;&#10;        &lt;!-- 接入阿里云百炼平台 --&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;dev.langchain4j&lt;/groupId&gt;&#10;            &lt;artifactId&gt;langchain4j-community-dashscope-spring-boot-starter&lt;/artifactId&gt;&#10;            &lt;version&gt;${langchain4j.version}&lt;/version&gt;&#10;        &lt;/dependency&gt;&#10;    &lt;/dependencies&gt;&#10;    &lt;dependencyManagement&gt;&#10;        &lt;dependencies&gt;&#10;            &lt;!--引入SpringBoot依赖管理清单--&gt;&#10;            &lt;dependency&gt;&#10;                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;                &lt;artifactId&gt;spring-boot-dependencies&lt;/artifactId&gt;&#10;                &lt;version&gt;${spring-boot.version}&lt;/version&gt;&#10;                &lt;type&gt;pom&lt;/type&gt;&#10;                &lt;scope&gt;import&lt;/scope&gt;&#10;            &lt;/dependency&gt;&#10;            &lt;!--引入langchain4j依赖管理清单，自动适配langchain所有版本--&gt;&#10;            &lt;dependency&gt;&#10;                &lt;groupId&gt;dev.langchain4j&lt;/groupId&gt;&#10;                &lt;artifactId&gt;langchain4j-bom&lt;/artifactId&gt;&#10;                &lt;version&gt;${langchain4j.version}&lt;/version&gt;&#10;                &lt;type&gt;pom&lt;/type&gt;&#10;                &lt;scope&gt;import&lt;/scope&gt;&#10;            &lt;/dependency&gt;&#10;            &lt;!--引入百炼依赖管理清单--&gt;&#10;            &lt;dependency&gt;&#10;                &lt;groupId&gt;dev.langchain4j&lt;/groupId&gt;&#10;                &lt;artifactId&gt;langchain4j-community-bom&lt;/artifactId&gt;&#10;                &lt;version&gt;${langchain4j.version}&lt;/version&gt;&#10;                &lt;type&gt;pom&lt;/type&gt;&#10;                &lt;scope&gt;import&lt;/scope&gt;&#10;            &lt;/dependency&gt;&#10;        &lt;/dependencies&gt;&#10;    &lt;/dependencyManagement&gt;&#10;&lt;/project&gt;" />
-                    </map>
-                  </option>
-                  <option name="messageId" value="019888967612744fa62717064b83e5c7" />
-                  <option name="question" value="&#10;```&#10;Xlfow mlg urmw zigruzxg wve.ozmtxszrm5q:ozmtxszrm5q-xlnnfmrgb-yln:kln:8.6.9 rm zornzevm (sggk://nzevm.zorbfm.xln/mvcfh/xlmgvmg/tilfkh/kfyorx/)&#10;&#10;```" />
+                  <option name="messageId" value="019889026cdc7663a3658722c7ec517f" />
+                  <option name="question" value="&#10;```&#10;xln.zoryzyz.wzhshxlkv.vcxvkgrlm.ZkrVcxvkgrlm: {&quot;hgzgfhXlwv&quot;:595,&quot;nvhhztv&quot;:&quot;Mlg Ulfmw&quot;,&quot;xlwv&quot;:&quot;ivhklmhv_viili&quot;,&quot;rhQhlm&quot;:uzohv}&#10;; hgzgfh ylwb:{&quot;hgzgfhXlwv&quot;:595,&quot;nvhhztv&quot;:&quot;Mlg Ulfmw&quot;,&quot;xlwv&quot;:&quot;ivhklmhv_viili&quot;,&quot;rhQhlm&quot;:uzohv}&#10;&#9;zg xln.zoryzyz.wzhshxlkv.kilglxlo.lpsggk.LpSggkSggkXorvmg.hvmw(LpSggkSggkXorvmg.qzez:760)&#10;&#9;zg xln.zoryzyz.wzhshxlkv.zkr.ZhbmxsilmlfhZkr.zhbmxXzoo(ZhbmxsilmlfhZkr.qzez:31)&#10;&#9;zg xln.zoryzyz.wzhshxlkv.zkr.ZhbmxsilmlfhZkr.xzoo(ZhbmxsilmlfhZkr.qzez:47)&#10;&#9;zg xln.zoryzyz.wzhshxlkv.zrtx.rnztvhbmgsvhrh.RnztvHbmgsvhrh.xzoo(RnztvHbmgsvhrh.qzez:854)&#10;&#9;zg wve.ozmtxszrm5q.xlnnfmrgb.nlwvo.wzhshxlkv.DzmcRnztvNlwvo.wlTvmvizgv(DzmcRnztvNlwvo.qzez:886)&#10;&#9;zg wve.ozmtxszrm5q.xlnnfmrgb.nlwvo.wzhshxlkv.DzmcRnztvNlwvo.tvmvizgv(DzmcRnztvNlwvo.qzez:08)&#10;&#9;zg hsrnnvi.zr.ozmtxszrm5q.OONWvnlGvhg.gvhgWzhsHxlkvDzmc(OONWvnlGvhg.qzez:16)&#10;&#9;zg qzez.yzhv/qzez.ozmt.ivuovxg.Nvgslw.rmelpv(Nvgslw.qzez:431)&#10;&#9;zg qzez.yzhv/qzez.fgro.ZiizbOrhg.uliVzxs(ZiizbOrhg.qzez:8488)&#10;&#9;zg qzez.yzhv/qzez.fgro.ZiizbOrhg.uliVzxs(ZiizbOrhg.qzez:8488)&#10;Xzfhvw yb: xln.zoryzyz.wzhshxlkv.vcxvkgrlm.ZkrVcxvkgrlm: {&quot;hgzgfhXlwv&quot;:595,&quot;nvhhztv&quot;:&quot;Mlg Ulfmw&quot;,&quot;xlwv&quot;:&quot;ivhklmhv_viili&quot;,&quot;rhQhlm&quot;:uzohv}; hgzgfh ylwb:{&quot;hgzgfhXlwv&quot;:595,&quot;nvhhztv&quot;:&quot;Mlg Ulfmw&quot;,&quot;xlwv&quot;:&quot;ivhklmhv_viili&quot;,&quot;rhQhlm&quot;:uzohv}&#10;&#9;... 89 nliv&#10;```" />
                   <option name="rating" value="UNRATED" />
                   <option name="referenceBeans">
                     <list />
@@ -7090,7 +8194,7 @@
                 </Turn>
               </list>
             </option>
-            <option name="updateTime" value="1754638246513" />
+            <option name="updateTime" value="1754645312078" />
           </Conversation>
         </option>
       </WebConversation>
