@@ -15,7 +15,7 @@ import dev.langchain4j.service.spring.AiServiceWiringMode;
 @AiService(
         wiringMode = AiServiceWiringMode.EXPLICIT, // 手动装配指定 chatModel
         chatModel = "openAiChatModel",
-        chatMemory = "chatMemory"
+        chatMemory = "chatMemory"//使用的chatmemory，config类里边就需要注入一个Chatmemory
 )
 public interface MemeryChatAssistant {
 
