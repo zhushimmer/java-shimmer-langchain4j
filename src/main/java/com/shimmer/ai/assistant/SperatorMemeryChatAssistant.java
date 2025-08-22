@@ -1,5 +1,6 @@
 package com.shimmer.ai.assistant;
 
+import dev.langchain4j.agent.tool.Tool;
 import dev.langchain4j.service.MemoryId;
 import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
@@ -18,7 +19,8 @@ import dev.langchain4j.service.spring.AiServiceWiringMode;
         (
                 wiringMode = AiServiceWiringMode.EXPLICIT, // 手动装配指定 chatModel
                 chatModel = "openAiChatModel",
-                chatMemoryProvider = "chatMemoryProvider"
+                chatMemoryProvider = "chatMemoryProvider",
+                tools = "calculatorTools" // 使用的工具类,注入bean首字母小写
         )
 public interface SperatorMemeryChatAssistant {
     //分离聊天记录

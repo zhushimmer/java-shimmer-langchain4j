@@ -5,6 +5,7 @@ import com.shimmer.ai.entity.ChatForm;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,6 +34,7 @@ public class XiaoZhiAgentController {
     private XiaoZhiAgent xiaoZhiAgent; // 注入XiaoZhiAgent智能体接口
 
     @Operation(summary = "小智智能体对话", description = "与小智智能体进行对话")
+    @PostMapping("/chat")
     public String chat(@RequestBody ChatForm chatForm) {
 
         // 调用XiaoZhiAgent的chat方法

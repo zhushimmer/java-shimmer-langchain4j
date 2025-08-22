@@ -21,11 +21,12 @@ import dev.langchain4j.service.spring.AiServiceWiringMode;
 @AiService(
         wiringMode = AiServiceWiringMode.EXPLICIT,
         chatModel = "qwenChatModel",
-        chatMemoryProvider = "chatMemoryProviderXiaoZhi"
+        chatMemoryProvider = "chatMemoryProviderXiaoZhi",
+        tools = "appointmentTools"
 )
 //创建Agent-chat方法；创建memery_provider；创建提示词文件
 public interface XiaoZhiAgent {
 
-    @SystemMessage(fromResource = "my_prompt_templatexiaozhi.txt") // 系统消息提示词用法
+    @SystemMessage(fromResource = "myprompt-templatexiaozhi.txt") // 系统消息提示词用法
     String  chat(@MemoryId Long memoryId, @UserMessage String message);
 }
