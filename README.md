@@ -33,3 +33,18 @@ Ollama接入:https://ollama.com/;    https://docs.langchain4j.dev/integrations/l
 
 mongdb接入:https://www.mongodb.com/try/download/community;   https://www.mongodb.com/try/download/shell;   https://www.mongodb.com/try/download/compass
 
+
+
+# 前端
+
+前端包在resources-ui目录下边
+
+先安装node.js
+
+cmd运行```npm config set registry https://registry.npmmirror.com```
+
+ui目录下运行
+```
+npm i
+npm run dev
+```
